@@ -1,0 +1,1381 @@
+<flows><flow generating_config="config_Amandroid_kcontext0.xml" id="am-0">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-1">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-2">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-3">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-4">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-5">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_Amandroid_kcontext0.xml" id="am-6">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onNewIntent(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-7">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int i(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int i(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationActivity</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-8">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-9">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_Amandroid_default.xml" id="am-10">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-11">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void scheduleTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-12">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void refreshNotifyBar()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-13">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-14">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void removeTrigger()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-15">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-16">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.notriddle.budget.PinActivity: Z ensureUnlocked(android.app.Activity)&gt;</method>
+                <classname>com.notriddle.budget.PinActivity</classname>
+                <app>
+                    <file>com.notriddle.budget_44.apk</file>
+                    <hashes>
+                        <hash type="MD5">b5dd01e6d042f436ec756da1530444ba</hash>
+                        <hash type="SHA-1">dc423333a459c50ab1d45ef71d3683d0133b88a0</hash>
+                        <hash type="SHA-256">4dcdb218f4a25fb5e2534880b8838dcc435fd8aedb2ba9737fe1effa8e7808f7</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int d(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int d(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.notriddle.budget.PinActivity: Z ensureUnlocked(android.app.Activity)&gt;</method>
+                <classname>com.notriddle.budget.PinActivity</classname>
+                <app>
+                    <file>com.notriddle.budget_44.apk</file>
+                    <hashes>
+                        <hash type="MD5">b5dd01e6d042f436ec756da1530444ba</hash>
+                        <hash type="SHA-1">dc423333a459c50ab1d45ef71d3683d0133b88a0</hash>
+                        <hash type="SHA-256">4dcdb218f4a25fb5e2534880b8838dcc435fd8aedb2ba9737fe1effa8e7808f7</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_Amandroid_default.xml" id="am-17">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.notriddle.budget.PinActivity: Z ensureUnlocked(android.app.Activity)&gt;</method>
+                <classname>com.notriddle.budget.PinActivity</classname>
+                <app>
+                    <file>com.notriddle.budget_44.apk</file>
+                    <hashes>
+                        <hash type="MD5">b5dd01e6d042f436ec756da1530444ba</hash>
+                        <hash type="SHA-1">dc423333a459c50ab1d45ef71d3683d0133b88a0</hash>
+                        <hash type="SHA-256">4dcdb218f4a25fb5e2534880b8838dcc435fd8aedb2ba9737fe1effa8e7808f7</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int d(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int d(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.notriddle.budget.PinActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.notriddle.budget.PinActivity</classname>
+                <app>
+                    <file>com.notriddle.budget_44.apk</file>
+                    <hashes>
+                        <hash type="MD5">b5dd01e6d042f436ec756da1530444ba</hash>
+                        <hash type="SHA-1">dc423333a459c50ab1d45ef71d3683d0133b88a0</hash>
+                        <hash type="SHA-256">4dcdb218f4a25fb5e2534880b8838dcc435fd8aedb2ba9737fe1effa8e7808f7</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-18">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.notriddle.budget.PinActivity: void notify(android.app.Activity)&gt;</method>
+                <classname>com.notriddle.budget.PinActivity</classname>
+                <app>
+                    <file>com.notriddle.budget_44.apk</file>
+                    <hashes>
+                        <hash type="MD5">b5dd01e6d042f436ec756da1530444ba</hash>
+                        <hash type="SHA-1">dc423333a459c50ab1d45ef71d3683d0133b88a0</hash>
+                        <hash type="SHA-256">4dcdb218f4a25fb5e2534880b8838dcc435fd8aedb2ba9737fe1effa8e7808f7</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int d(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int d(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.notriddle.budget.PinActivity: void onCreate(android.os.Bundle)&gt;</method>
+                <classname>com.notriddle.budget.PinActivity</classname>
+                <app>
+                    <file>com.notriddle.budget_44.apk</file>
+                    <hashes>
+                        <hash type="MD5">b5dd01e6d042f436ec756da1530444ba</hash>
+                        <hash type="SHA-1">dc423333a459c50ab1d45ef71d3683d0133b88a0</hash>
+                        <hash type="SHA-256">4dcdb218f4a25fb5e2534880b8838dcc435fd8aedb2ba9737fe1effa8e7808f7</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-19">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.jsl.wfwt.MainActivity: void onPause()&gt;</method>
+                <classname>org.jsl.wfwt.MainActivity</classname>
+                <app>
+                    <file>org.jsl.wfwt_14.apk</file>
+                    <hashes>
+                        <hash type="MD5">154bb40a6c1855b96646e58abbeeaad8</hash>
+                        <hash type="SHA-1">a4a0c9125e0c0e4c940a17ef303157ce6e8bc85d</hash>
+                        <hash type="SHA-256">24a4009f798a2ac2502c406900577f54460db67819e55b33c216c444ed2644cc</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int d(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int d(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int d(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.jsl.wfwt.MainActivity: void onResume()&gt;</method>
+                <classname>org.jsl.wfwt.MainActivity</classname>
+                <app>
+                    <file>org.jsl.wfwt_14.apk</file>
+                    <hashes>
+                        <hash type="MD5">154bb40a6c1855b96646e58abbeeaad8</hash>
+                        <hash type="SHA-1">a4a0c9125e0c0e4c940a17ef303157ce6e8bc85d</hash>
+                        <hash type="SHA-256">24a4009f798a2ac2502c406900577f54460db67819e55b33c216c444ed2644cc</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_Amandroid_default.xml" id="am-20">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;trikita.talalarmo.alarm.d: void a()&gt;</method>
+                <classname>trikita.talalarmo.alarm.d</classname>
+                <app>
+                    <file>trikita.talalarmo_19.apk</file>
+                    <hashes>
+                        <hash type="MD5">708d8ae1dec1ac578eb07f76c35f1894</hash>
+                        <hash type="SHA-1">f7bbd590eae12734b6f6d32a1423dc46681579eb</hash>
+                        <hash type="SHA-256">91dae06db60737619af5704e97ec51ea673bd1ac6bac6486a0fd89b53075cf94</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.Context: void sendBroadcast(android.content.Intent)</statementfull>
+                    <statementgeneric>android.content.Context: void sendBroadcast(android.content.Intent)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Intent</type>
+                            <value>android.content.Context: void sendBroadcast(android.content.Intent</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;trikita.talalarmo.alarm.d: void a()&gt;</method>
+                <classname>trikita.talalarmo.alarm.d</classname>
+                <app>
+                    <file>trikita.talalarmo_19.apk</file>
+                    <hashes>
+                        <hash type="MD5">708d8ae1dec1ac578eb07f76c35f1894</hash>
+                        <hash type="SHA-1">f7bbd590eae12734b6f6d32a1423dc46681579eb</hash>
+                        <hash type="SHA-256">91dae06db60737619af5704e97ec51ea673bd1ac6bac6486a0fd89b53075cf94</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_Amandroid_kcontext0.xml" id="am-21">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void i(android.content.Context,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-22">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void b(android.content.Context,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-23">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void f(android.content.Context,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-24">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void d(android.content.Context,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-25">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void c(android.content.SharedPreferences,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_default.xml" id="am-26">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void a(android.content.Context,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_Amandroid_kcontext8.xml" id="am-27">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void g(android.content.Context,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-28">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void c(android.content.SharedPreferences,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-29">
+            <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void c(android.content.SharedPreferences,)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        </flows>

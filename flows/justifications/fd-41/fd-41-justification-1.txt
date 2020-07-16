@@ -1,0 +1,10 @@
+fd-41
+This is a false positive
+
+Log.i(TAG, "Already wake-locked, releasing extra lock"); // line 23
+
+
+TAG is a class name,
+TAG = AlarmNotificationActivity.class.getSimpleName();
+
+There is no data flow from the source

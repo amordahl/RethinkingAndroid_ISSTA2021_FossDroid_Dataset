@@ -1,0 +1,4 @@
+All parameters to the sink are constant.
+
+Sink: Log.w(TAG, "no active alarms when dismissed);
+AlarmNotificationService.java: Line 246

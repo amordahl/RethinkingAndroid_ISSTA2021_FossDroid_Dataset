@@ -1,0 +1,12 @@
+classification: false positive
+
+sink: Line 123 in AlarmNotificationActivity.java, in method void onNewIntent(Intent i)
+
+	Log.e(TAG, "Unhandled intent!");
+
+source: Lines 130-131 in DbUtil inner class Settings, in method: Settings(Cursor c)
+
+	tone_name = c.getString(c.getColumnIndex(
+          AlarmClockProvider.SettingsEntry.TONE_NAME));
+
+TAG is a constant and is never written to with data from the source.
