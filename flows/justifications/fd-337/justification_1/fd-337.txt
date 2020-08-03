@@ -1,0 +1,10 @@
+Sink : 
+Activity: DialerActivity.java
+Line 693 
+
+private void clearCallLog() {
+        getContentResolver().delete(Calls.CONTENT_URI, null, null); <-------
+    }
+
+
+No values are coming to sink hence False positive

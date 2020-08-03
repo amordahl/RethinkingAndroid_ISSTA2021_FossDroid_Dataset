@@ -1,0 +1,5 @@
+All parameters to the sink are constant.
+
+sink: 
+startActivityForResult(new Intent(this, WindowList.class), REQUEST_CHOOSE_WINDOW);
+Term.java: Line 687

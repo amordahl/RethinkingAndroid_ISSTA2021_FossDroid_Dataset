@@ -1,0 +1,9 @@
+All parameters to the sink are constant
+
+
+Sink: startService(TSIntent);
+Term.java: Line 355
+
+creation of TSIntent:
+TSIntent = new Intent(this, TermService.class)
+Term.java: Line 354

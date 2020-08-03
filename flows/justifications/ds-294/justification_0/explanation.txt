@@ -1,0 +1,4 @@
+Parameters to the sink are SCHEMA_VERSION and the new version, doesn't interact with anything else
+
+Sink: Log.i("greenDAO", "Upgrading schema from version " + oldVersion + " to " + newVersion + " by dropping all tables");
+DaoMaster.java: Line 52

@@ -1,0 +1,6 @@
+I'm classifying this as false because i dont believe that the length of a string qualifies as taint. Even if the string is tainted
+
+Sink:
+
+return checkedPath.substring(0, checkPath.length()-1);
+ShellTermSession.java: Line 114

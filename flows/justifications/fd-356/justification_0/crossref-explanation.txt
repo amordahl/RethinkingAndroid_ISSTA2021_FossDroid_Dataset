@@ -1,0 +1,4 @@
+All parameters to the sink are constants.
+
+Sink: getContentResolver().delete(Calls.CONTENT_URI, null, null);
+DialerActivity.java: Line 693

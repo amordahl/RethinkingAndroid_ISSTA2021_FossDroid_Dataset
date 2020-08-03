@@ -1,0 +1,27 @@
+fd-342
+
+Sink:
+ DialerActivity.java
+ Line 809
+
+In method we have a try catch block to catch throwable which is our sink here.
+
+ private void clearMissedCallsNotification() {
+  ...
+  ...
+  ...
+   catch (Throwable ex) {
+	        Log.e(LOG_TAG, "Failed to clear missed calls notification due to Throwable!", ex); <---
+	    }
+
+ }
+
+
+The sink is getting all the parameter as constant.
+LOG_TAG is constant string.
+Second paramter is also a string constant.
+
+
+After doing analysis for ex we found that it is not user defined in the applications so the value coming is by deafult previously defined values.There no taint can be passed into it.
+
+So this is False positive as sink is unable to have any taint.

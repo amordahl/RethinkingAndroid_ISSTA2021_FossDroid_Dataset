@@ -1,0 +1,17 @@
+fd-393
+This is same as fd-390
+
+Application : protect.budgetwatch
+
+Sink:
+TransactionViewActivity.java
+Line 752 :  Log.e(TAG, "Failed to create receipt image: " + resultCode);
+Note: resultcode is the only variable in this line of code coming from parameter resultcode.
+
+Line 725:    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+
+The resultCode is an integer value which comes bydefault in case of successful activity or unsucessful activity.
+ Note:
+So from sink we can see that it taking values which are constant.
+So this flow is False Positive.
+

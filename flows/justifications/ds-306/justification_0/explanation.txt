@@ -1,0 +1,7 @@
+data from source is written to variable length. length is passed to sink
+
+sink: picture_output_stream.write(buffer, 0, length);
+FlexibleWallpaperSettingsActivity.java: Line 44
+
+source: length = picture_input_stream.read(buffer)) >=0)
+FlexibleWallpaperSettingsActivity.java: Line 42

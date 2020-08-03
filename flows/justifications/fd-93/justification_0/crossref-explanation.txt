@@ -1,0 +1,4 @@
+All parameters to the sink are constant.
+
+Sink: Log.w(TAG, "No active alarms when snoozed");
+AlarmNotificationService.java: Line 275

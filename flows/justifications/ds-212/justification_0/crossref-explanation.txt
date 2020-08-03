@@ -1,0 +1,4 @@
+all parameters to the sink are constant.
+
+Sink: handler.setEmptyMessage(ActiveAlarms.RESET_VOLUME);
+AlarmNotificationService.java: Line 513

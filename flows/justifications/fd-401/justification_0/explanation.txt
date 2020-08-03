@@ -1,0 +1,4 @@
+Parameter to the sink has been graphed in fd-387
+
+sink: Log.i(TAG, "Deleting unsaved image: " +capturedUncommittedReceipt);
+TransactionViewActivity.java: Line 485

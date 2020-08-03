@@ -1,0 +1,7 @@
+All parameters to the sink are constants. 
+(button code can only be set to one of 4 different values)
+
+
+Sink: 
+Log.e(TAG, "mouse button_code out of range: " + button_code);
+EmulatorView.java: Line 1104

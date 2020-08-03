@@ -1,0 +1,4 @@
+All parameters to the sink are constant.
+
+Sink: setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+Splash.java: Line 32

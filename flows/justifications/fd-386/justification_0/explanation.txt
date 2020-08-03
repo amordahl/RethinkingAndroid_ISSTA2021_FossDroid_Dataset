@@ -1,0 +1,4 @@
+All parameters to the sinka are constant
+
+Sink: bundle.putBoolean("update", true);
+TransactionViewActivity.java: Line 597

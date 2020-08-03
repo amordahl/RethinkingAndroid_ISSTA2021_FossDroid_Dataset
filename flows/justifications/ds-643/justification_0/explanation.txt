@@ -1,0 +1,8 @@
+All parameters to all sinks aren't taintable.
+
+
+Sink 1: seedBufferOut.writeLOng(System.nanoTime());
+PRNGFixes.java: Line 303
+
+Sink 2: seedBufferOut.writeLong(System.currentTimeMillis());
+PRNGFixes.java: Line 302

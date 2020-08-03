@@ -1,0 +1,13 @@
+All parameters to all possible sinks are either constants or just
+errors.
+
+3 possible sinks:
+
+Sink: Log.e(TermDebug.LOG_TAG, "invalid shortcut: " + e.toString());
+RunShortcut.java: Line 62
+
+Sink: Log.e(TermDebug.LOG_TAG, "No command provided in shortcut!");
+RunShortcut.java: Line 45
+
+Sink: Log.e(TermDebug.LOG_TAG, " No shortcut encryption keys found!");
+RunShortcut.java: Line 54

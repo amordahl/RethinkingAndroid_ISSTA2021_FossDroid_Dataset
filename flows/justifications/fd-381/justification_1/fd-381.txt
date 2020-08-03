@@ -1,0 +1,64 @@
+fd-381
+
+Application : protect.budgetwatch
+
+Sink:
+ DatabaseCleanupTask.java
+ Line 138 -- >     Log.i(TAG, "Deleting orphaned receipt: " + receipt.getAbsolutePath());
+
+ Line 119 --> for(File receipt : files)
+ 
+Line 111 -->  File [] files = imageDir.listFiles();
+
+Line 102 -->  File imageDir = activity.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+
+Source:
+Transaction.java
+Line 48: String description = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.DESCRIPTION));
+         String account = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.ACCOUNT));
+         String budget = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.BUDGET));
+         String note = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.NOTE));
+         String receipt = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.RECEIPT));
+
+Line 56: return new Transaction(id, type, toBlankIfNull(description), toBlankIfNull(account),
+                toBlankIfNull(budget), value, toBlankIfNull(note), dateMs,
+                toBlankIfNull(receipt));
+
+Line 17: private Transaction(final int id, final int type, final String description, final String account,
+                       final String budget, final double value, final String note, final long dateMs,
+                       final String receipt)
+
+Line 23:  this.description = description;
+        this.account = account;
+        this.budget = budget;
+        this.value = value;
+        this.note = note;
+
+DatabaseCleanupTask.java
+Line 67:db.updateTransaction(transaction.id, transaction.type, transaction.description,
+                    transaction.account, transaction.budget, transaction.value, transaction.note,
+                    transaction.dateMs, /* no receipt */ "");
+
+        }
+DBHelper.java
+Line 494: public boolean updateTransaction(final int id, final int type, final String description,
+                                     final String account, final String budget, final double value,
+                                     final String note, final long dateInMs, final String receipt)
+
+Line 500:    contentValues.put(TransactionDbIds.DESCRIPTION, description);
+        contentValues.put(TransactionDbIds.ACCOUNT, account);
+        contentValues.put(TransactionDbIds.BUDGET, budget);
+        contentValues.put(TransactionDbIds.VALUE, value);
+        contentValues.put(TransactionDbIds.NOTE, note);
+        contentValues.put(TransactionDbIds.DATE, dateInMs);
+        contentValues.put(TransactionDbIds.RECEIPT, receipt);
+
+Line 509: int rowsUpdated = db.update(TransactionDbIds.TABLE, contentValues,
+                TransactionDbIds.NAME + "=?",
+                new String[]{Integer.toString(id)});
+ 
+Note:
+So from sink we can see that it is getting value from reciept which is coming from files.files is object storing values from imgaeDir list.We can see imageDir is getting value from externaldirectory default path.
+It's not taking any data from source.
+So this flow is False Positive.
+

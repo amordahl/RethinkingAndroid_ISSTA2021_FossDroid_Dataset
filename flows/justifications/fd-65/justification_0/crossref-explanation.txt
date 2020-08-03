@@ -1,0 +1,4 @@
+Both parameters to the sink are constants
+
+Sink: Log.i(TAG, "Already wake-locked, releasing extra lock");
+AlarmNotificationService.java: Line 203

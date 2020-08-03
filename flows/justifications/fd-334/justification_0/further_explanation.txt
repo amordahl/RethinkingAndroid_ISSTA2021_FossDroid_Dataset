@@ -1,0 +1,2 @@
+Sink includes the c.getString(1) (which is hooked up to the source statement)
+Same sink as fd-333

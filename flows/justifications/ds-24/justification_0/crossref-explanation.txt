@@ -1,0 +1,5 @@
+All parameters to the sink are constant.
+
+sink: startActivity(new Intent().setClassName("anupam.acrylic",
+							"anupam.acrylic.EasyPaint"));
+Splash.java: Line 41

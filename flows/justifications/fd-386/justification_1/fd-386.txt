@@ -1,0 +1,11 @@
+fd-386
+
+Application : protect.budgetwatch
+
+Sink:
+TransactionViewActivity.java
+Line 597 : bundle.putBoolean("update", true);
+ Note:
+So from sink we can see that it taking values which are constant that is a string and a boolean value True.
+So this flow is False Positive.
+

@@ -1,0 +1,83 @@
+fd-385
+
+Application : protect.budgetwatch
+
+Sink:
+ TransactionActivity.java
+ Line 45 -- >     this.registerReceiver(_dbChanged, new IntentFilter(TransactionDatabaseChangedReceiver.ACTION_DATABASE_CHANGED));
+ Line 44 -->  _dbChanged = new TransactionDatabaseChangedReceiver();
+
+ TransactionDatabaseChangedReceiver.java
+Line 12 -->  public class TransactionDatabaseChangedReceiver extends BroadcastReceiver
+{
+    public static final String ACTION_DATABASE_CHANGED = "protect.budgetwatch.TRANSACTION_DATABASE_CHANGED";
+
+    private boolean _hasChanged = false;
+
+    @Override
+    public void onReceive(Context context, Intent intent)
+    {
+        _hasChanged = true;
+    }
+
+    public boolean hasChanged()
+    {
+        return _hasChanged;
+    }
+
+    public void reset()
+    {
+        _hasChanged = false;
+    }
+}
+
+
+
+Source:
+Transaction.java
+Line 48: String description = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.DESCRIPTION));
+         String account = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.ACCOUNT));
+         String budget = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.BUDGET));
+         String note = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.NOTE));
+         String receipt = cursor.getString(cursor.getColumnIndexOrThrow(DBHelper.TransactionDbIds.RECEIPT));
+
+Line 56: return new Transaction(id, type, toBlankIfNull(description), toBlankIfNull(account),
+                toBlankIfNull(budget), value, toBlankIfNull(note), dateMs,
+                toBlankIfNull(receipt));
+
+Line 17: private Transaction(final int id, final int type, final String description, final String account,
+                       final String budget, final double value, final String note, final long dateMs,
+                       final String receipt)
+
+Line 23:  this.description = description;
+        this.account = account;
+        this.budget = budget;
+        this.value = value;
+        this.note = note;
+
+DatabaseCleanupTask.java
+Line 67:db.updateTransaction(transaction.id, transaction.type, transaction.description,
+                    transaction.account, transaction.budget, transaction.value, transaction.note,
+                    transaction.dateMs, /* no receipt */ "");
+
+        }
+DBHelper.java
+Line 494: public boolean updateTransaction(final int id, final int type, final String description,
+                                     final String account, final String budget, final double value,
+                                     final String note, final long dateInMs, final String receipt)
+
+Line 500:    contentValues.put(TransactionDbIds.DESCRIPTION, description);
+        contentValues.put(TransactionDbIds.ACCOUNT, account);
+        contentValues.put(TransactionDbIds.BUDGET, budget);
+        contentValues.put(TransactionDbIds.VALUE, value);
+        contentValues.put(TransactionDbIds.NOTE, note);
+        contentValues.put(TransactionDbIds.DATE, dateInMs);
+        contentValues.put(TransactionDbIds.RECEIPT, receipt);
+
+Line 509: int rowsUpdated = db.update(TransactionDbIds.TABLE, contentValues,
+                TransactionDbIds.NAME + "=?",
+                new String[]{Integer.toString(id)});
+Note:
+So from sink we can see that it is onreceive is setting value True or false and not getiing any value from source.
+So this flow is False Positive.
+

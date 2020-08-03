@@ -1,0 +1,39 @@
+FD-338
+SOURCES : there are two sources in this flows from where data can flow
+
+SOURCE =1
+Activity: DialerActivity.java
+Line:627
+
+Note: the ColumnIndex for getString = 1 and
+->value is assigned to phoneNumber
+
+->Phone number is used for conditioned and not passed anywhere so this source is not sending any taints.
+
+----------------------
+->SOURCE =2 
+Activity: DialerActivity.java
+Line:633
+Note: the ColumnIndex for getString = 1 and passed through 
+method callContantactandFinish()
+
+From the source taint passes to Line 650
+->DialerActivity.java
+Line:650
+Note: value is passed as lookup key in method
+
+Method is defined at this line
+DialerActivity.java
+Line:968
+ public void callContactAndFinish(String lookupKey) {}
+Note: method defined here
+
+Next-->
+DialerActivity.java
+Line:969
+Note: lookupkey is passed as condtion for query and not updated anywhere
+ startQuery(TOKEN_CALL_CONTACT, null, Phone.CONTENT_URI, null, Phone.LOOKUP_KEY + "=?", new String[] {lookupKey}, null);
+
+
+----
+So both the sources are not passing the taint to any sink then its a false positive.

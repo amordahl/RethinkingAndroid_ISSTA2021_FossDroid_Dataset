@@ -1,0 +1,8 @@
+parameter to the sink is graphed in fd-7
+
+sink:
+startActivity(
+            new Intent(this, AlarmNotificationActivity.class)
+            .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            .putExtra(ALARM_ID, activeAlarms.alarmids.iterator().next()));
+AlarmNotificationService.java: Line 160

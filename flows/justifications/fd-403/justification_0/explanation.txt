@@ -1,0 +1,4 @@
+all parameters to the sink are graphed in fd-398
+
+sink: Log.e(TAG, "Deleting transaction: " +_transactionId);
+TransactionViewActivity.java: Line 613

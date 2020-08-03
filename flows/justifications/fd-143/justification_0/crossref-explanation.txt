@@ -1,0 +1,4 @@
+Both parameters to the sink are constant
+
+sink: Log.w(TAG, "Alarm timeout");
+AlarmNotificationService.java: Line 459

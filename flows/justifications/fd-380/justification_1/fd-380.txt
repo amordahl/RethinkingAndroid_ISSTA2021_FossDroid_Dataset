@@ -1,0 +1,12 @@
+fd-380
+
+Application : protect.budgetwatch
+Sink:
+ DBHelper.java
+ Line 68 -- >   _context.sendBroadcast(new Intent(TransactionDatabaseChangedReceiver.ACTION_DATABASE_CHANGED));
+
+Note:
+So from sink we can see that it is used as Intent passing and the filter which is listening to this will open after this.
+It's not taking any data from source.
+So this flow is False Positive.
+

@@ -1,0 +1,7 @@
+Parameter of the sink is the source.
+
+Sink: a.setStreamVolume(Audiomanager.STREAM_ALARM, a.getStreamMaxVolume(AudioManager.STREAM_ALARM), 0);
+AlarmNotificationService.java: Line 422
+
+source: a.getStreamMaxVolume(AudioManager.STREAM_ALARM)
+AlarmNotificationService.java: Line 422

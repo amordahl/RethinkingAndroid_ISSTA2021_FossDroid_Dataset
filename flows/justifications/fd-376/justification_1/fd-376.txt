@@ -1,0 +1,25 @@
+fd-376
+
+Sink:
+ HandshakeClientSession.java
+ Line 112 -- >  Log.w( LOG_TAG, ex.toString() );
+ Line 142 --> Log.w( LOG_TAG, getLogPrefix() +
+                                "unsupported audio format [" + audioFormat + "], closing connection" );
+
+ Line 160 -->   Log.w( LOG_TAG, getLogPrefix() + ": " + ex.toString() + ", close connection" );
+ Line -173 --> Log.w( LOG_TAG, getLogPrefix() + ex.toString() );
+
+Source: AudioRecorder.java: inside void run()
+
+Line:164 -->  final int bytesReady = m_audioRecord.read(
+                        byteBufferArray, byteBufferArrayOffset+byteBuffer.position(), m_frameSize );
+               
+Line 166 -->if (bytesReady == m_frameSize){
+
+Line 189 --> Log.e( LOG_TAG, "readSize=" + m_frameSize + " bytesReady=" + bytesReady );
+
+Note:
+So from source we can see that it is used as condition and passed in Log.e only and not to log.i.
+It's not passing data  to the sink.
+So this flow is False Positive.
+

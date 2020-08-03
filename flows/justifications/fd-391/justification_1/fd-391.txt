@@ -1,0 +1,17 @@
+fd-391
+This is same as fd-390
+
+Application : protect.budgetwatch
+
+Sink:
+TransactionViewActivity.java
+Line 119 : Log.d(TAG, "Unsupported action '" + action + "', bailing");
+action is the only variable in this line of code .
+
+Line 96:  String action = intent.getAction();
+Action is getting the Action value passed by intent. eg.ACTION_VIEW.
+
+ Note:
+So from sink we can see that it taking values which are constant or are not getting set up anywhere in the code hence null or default value for action variable.
+So this flow is False Positive.
+

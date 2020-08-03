@@ -1,0 +1,27 @@
+fd-358
+
+Sink:
+ DialerActivity.java
+ Line 707
+
+  private void clearMissedCalls() {
+        // Clear the new missed calls (the actual missed calls, doesn't clear the notification)
+    	StringBuilder where = new StringBuilder();
+    	where.append(Calls.TYPE);
+    	where.append("=");
+    	where.append(Calls.MISSED_TYPE);
+    	where.append(" AND ");
+    	where.append(Calls.NEW);
+    	where.append("=1");
+    	ContentValues cv = new ContentValues(1);
+    	cv.put(Calls.NEW, 0);
+    	getContentResolver().update(Calls.CONTENT_URI, cv, where.toString(), null); <----
+    }
+
+
+The sink is getting all the parameter as constant.
+URI is constant.
+cv contains value zero which is constant
+where.toString is a constant also.
+
+So this is False positive as sink is unable to have any taint.

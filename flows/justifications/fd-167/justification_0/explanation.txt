@@ -1,0 +1,4 @@
+Both parameters to the sink are constant
+
+sink: Log.i(TAG, "Installed...");
+SystemMessageReceiver.java: Line 36

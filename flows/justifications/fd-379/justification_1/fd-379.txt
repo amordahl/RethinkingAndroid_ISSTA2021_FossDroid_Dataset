@@ -1,0 +1,58 @@
+fd-379
+
+Application : protect.budgetwatch
+
+Sink:
+ BudgetViewActivity.java
+ Line 191 -- >    Log.e(TAG, "Deleting budget: " + budgetName);
+ Line 166 -->  final String budgetName = b != null ? b.getString("id") : null;
+ Line 165 -->  final Bundle b = getIntent().getExtras();
+ 
+ BudgetActivity.java
+
+
+Line 176 --> Intent i = new Intent(getApplicationContext(), BudgetViewActivity.class);
+Line 178-->  bundle.putString("id", budget.name);
+
+Line 172 --> Budget budget = (Budget) listView.getItemAtPosition(info.position);
+Line 168--> ListView listView = (ListView) findViewById(R.id.list);
+Line 167 --> AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+Line 
+
+Line 165: --> public boolean onContextItemSelected(MenuItem item)
+
+Line 154 --> public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
+
+Line 100 -->  registerForContextMenu(budgetList);
+
+Line 96--> final List<Budget> budgets = _db.getBudgets(budgetStartMs, budgetEndMs);
+        final BudgetAdapter budgetListAdapter = new BudgetAdapter(this, budgets);
+        budgetList.setAdapter(budgetListAdapter);
+
+
+DBHelper.java
+
+Line 234-->  public List<Budget> getBudgets(long startDateMs, long endDateMs)
+
+Line 241-->   final String BUDGET_ID = BudgetDbIds.TABLE + "." + BudgetDbIds.NAME;
+
+
+
+Source:
+DBhelper.java
+Line 208-->  String goalName = data.getString(data.getColumnIndexOrThrow(BudgetDbIds.NAME));
+
+Line 211 -->  budget = new Budget(goalName, goalMax, 0);
+Budget.java
+Line 9 --> public Budget(final String name, final int max, final int value)
+Line 11 --> this.name = name;
+
+Line 5--> public final String name;
+
+Line 178 -->    bundle.putString("id", budget.name);----Here the taint is passing to sink
+
+
+Note:
+So from sink we can see that it gets is value from DBHelper class but in middle using the Budget activity object the value is passed in sink from source.from source.
+So this flow is True Positive.
+

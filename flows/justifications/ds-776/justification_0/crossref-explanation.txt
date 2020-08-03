@@ -1,0 +1,7 @@
+All parameters to the sink are constant or untaintable.
+
+
+Sink: mMsgHandler.sendMessage(mMsgHandler.obtainMessage(NEW_INPUT));
+TermSession.java: Line 166
+
+mMsgHandler.obtainMessage(NEW_INPUT) just grabs a message from the messagepool and sets the .what to the constant NEW_INPUT

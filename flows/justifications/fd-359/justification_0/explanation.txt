@@ -1,0 +1,11 @@
+This is true, the cv is filled with data from the source.
+
+
+Source: c2 = cr.query(...)
+DialerActivity.java: Line 741
+
+Conenction: cv.put(CACHED_NAME, c2.getString(0));
+DialerActivity.java: Line 747
+
+Sink: cr.update(Calls.CONTENT_URI, cv, Calls.NUMBER + "=?", new String[]{number});
+DialerActivity.java: Line 750

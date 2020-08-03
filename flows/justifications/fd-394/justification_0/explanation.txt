@@ -1,0 +1,5 @@
+Parameter passed to the sink is graphed in fd-387
+
+sink: Log.e(TAG, "Unable to delete unnsecessary file: " + capturedUncommittedReceipt);
+TransactionViewActivity.java: Line 543
+

@@ -1,0 +1,4 @@
+Parameter to the sink is just an IOError created right above the statement.
+
+Sink: Log.e("exec", "Failed to set UTF mode: " + e.getMessage());
+GenericTermSession.java: Line 201

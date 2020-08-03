@@ -1,0 +1,4 @@
+All parameters to the sink are constant.
+
+Sink: flip.setInAnimation(getContext(), R.anim.slide_in_right);
+MediaPicker.java: Line 197

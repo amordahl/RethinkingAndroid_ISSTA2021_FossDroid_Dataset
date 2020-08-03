@@ -1,0 +1,7 @@
+Source statement dies instantly
+
+Source:
+
+String phoneNumber = c.getString(CallLogAdapter.COLUMN_NUMBER);
+DialerActivity.java: Line 627
+           

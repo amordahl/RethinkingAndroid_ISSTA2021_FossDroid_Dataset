@@ -1,0 +1,14 @@
+All parameters to the sink are constant.
+
+2 possible sinks:
+
+sink 1: db.execSQL("CREATE TABLE " + constraint + "\"EXERCISE\" (" + //
+                "\"TIMESTAMP\" INTEGER," + // 0: timestamp
+                "\"REPS\" INTEGER," + // 1: reps
+                "\"WEIGHT\" INTEGER," + // 2: weight
+                "\"TYPE_ID\" INTEGER NOT NULL );");
+ExerciseDao.java: Line 49
+
+sink 2: db.execSQL("CREATE INDEX " + constraint + "timestamp ON EXERCISE" +
+                " (\"TIMESTAMP\");");
+ExerciseDao.java: Line 55

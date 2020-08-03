@@ -1,0 +1,6 @@
+Classification: FALSE POSITIVE
+
+[SOURCE] AlarmNotificationService.java:327 -> tick is created as a pending intent.
+AlarmNotificationService.java:344 -> tick is sent to cancel.
+
+As cancel does not actually invoke the intent, the flow ends here.

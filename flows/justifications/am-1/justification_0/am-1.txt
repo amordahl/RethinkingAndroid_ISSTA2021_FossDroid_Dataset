@@ -1,0 +1,5 @@
+Classification: TRUE POSITIVE
+
+[SOURCE] AlarmNotificationService.java:228 -> the call to getActivity produces a pendingintent, based on the Intent "notify" created on line 219.
+AlarmNotificationActivity.java:107 -> alarmid is read in from the intent, which is tainted as it comes from the pending intent.
+[SINK] AlarmNotificationActivity.java:114 -> The alarmid is written to a call to Log.i. This is the sink.

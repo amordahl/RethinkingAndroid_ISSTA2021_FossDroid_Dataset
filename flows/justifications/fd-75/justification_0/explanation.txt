@@ -1,0 +1,4 @@
+same sink as fd-37 and the source is
+
+snooze = DbUtil.Settings.get(this, alarmid).snooze;
+AlarmNotificationActivity.java: Line 53

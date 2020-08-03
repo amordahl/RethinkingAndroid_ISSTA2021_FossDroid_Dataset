@@ -1,0 +1,40 @@
+FD-351
+Sink:
+Line:598 :  editor.putString(PREFERENCE_SPEED_DIAL_SLOT+slot, phoneNumber);  <---
+SAME AS FD-339.REFER for SINK ANALYSIS
+------------------------------------------------------------------------------------------
+SOURCE:
+There are two sources line no 725 and line no 741 in DialerActivity.java
+
+Activity: DialerActivity.java
+
+Line 725:
+Cursor c = cr.query(Calls.CONTENT_URI,
+    			new String[] {Calls.CACHED_NAME, Calls.NUMBER}, null, null, null);
+when Cursor C will get the data from here 
+
+Next-->
+Line 735:
+Value from Content URI is stored in variable number.
+
+Next-->
+This is our second source
+Variable is passed in this.
+
+Line 741: Cursor c2 = cr.query(Uri.withAppendedPath(PhoneLookup.CONTENT_FILTER_URI, Uri.encode(number)), 
+    				phoneProjection, null, null, null);
+
+Line 749: Value from Column index 2 from Content_FILTER_URI is passed in a Content Values.
+
+
+Activity: DialerActivity.java
+Line:750
+CODE:cr.update(Calls.CONTENT_URI, cv, Calls.NUMBER + "=?", new String[] {number});
+Note: cv is updated in Calls.CONTENT_URI table with values from CONTENT_FILTER_URI
+-------------------------------------------------------------------------------------------
+CLASSIFICATION : FALSE
+
+So this is a FALSE positive as
+  database where source(Calls.CONTENT_URI) is updating 
+value the sink(Data.CONTENT_URI) is taking 
+from are not Same .

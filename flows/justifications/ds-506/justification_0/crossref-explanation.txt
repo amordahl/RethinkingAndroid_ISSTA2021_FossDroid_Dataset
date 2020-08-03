@@ -1,0 +1,4 @@
+all parameters to the sink are constant.
+
+sink: startActivity(openHelp);
+Term.java: Line 706

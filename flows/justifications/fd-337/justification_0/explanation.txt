@@ -1,0 +1,4 @@
+I'm classifying this as false because all the parameters to the sink are constant.
+
+Sink: getContentResolver().delete(Calls.CONTENT_URI, null, null);
+DialerActivity.java: Line 693

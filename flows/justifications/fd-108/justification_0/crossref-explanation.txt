@@ -1,0 +1,5 @@
+Other than the Context c, the sink is not passed anything except contexts.
+The reasont the Context is not tainted is because android uses contexts to provide resources to activities (therefore, it isn't tainted because it doesn't contain anything)
+
+Sink: c.startService(new Intent(c, AlarmNotificationService.class).putExtra(COMMAND, MAYBE_SHOW_DISMISS));
+AlarmNotificationService.java: Line 120

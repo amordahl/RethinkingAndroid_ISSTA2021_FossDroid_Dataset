@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink: 
+_context.sendBroadcast(new Intent(TransactionDatabaseChangedReceiver.ACTION_DATABASE_CHANGED));
+DBHelper.java: Line 68

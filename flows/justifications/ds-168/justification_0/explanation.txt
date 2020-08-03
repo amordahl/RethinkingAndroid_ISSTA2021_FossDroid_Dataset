@@ -1,0 +1,7 @@
+All parameters to the sink are constant.
+
+Sink: a.setStreamVolume(AudioManager.STREAM_ALARM, init_volume, 0);
+AlarmNotificationService.java: Line 448
+
+Sink: a.setStreamColume(AudioManager.STREAM_ALARM, a.getStreamMaxVolume(AudioManager.STREAM_ALARM), 0);
+AlarmNotificationService.java: Line 422

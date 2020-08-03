@@ -1,0 +1,4 @@
+the ex variable in the source is a throwable error in catch(Throwable ex)
+
+sink: Log.e(LOG_TAG, "FAILED to clear missed calls notification due to Throwable!", ex);
+DialerActivity.java: Line 809

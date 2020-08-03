@@ -1,0 +1,5 @@
+All possible values that the parameter to the sink is set to are constants.
+
+sink:
+setRequestedOrientation(o);
+Term.java: Line 600

@@ -1,0 +1,5 @@
+All parameters to the sink are constant.
+
+Sink: 
+writerHandler.sendEmptyMessage(NEW_OUTPUT);
+TermSession.java: Line 342

@@ -1,0 +1,7 @@
+fd-350
+
+Sink:
+Line : 693 ---> getContentResolver().delete(Calls.CONTENT_URI, null, null);
+DialerActivity.java
+
+As all the values coming to sink are constant so this is a False positive.

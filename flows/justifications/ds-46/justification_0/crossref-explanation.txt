@@ -1,0 +1,27 @@
+all parameters to the sink are constant.
+
+2 possible sinks
+
+db.execSQL(
+          "CREATE TABLE " + AlarmEntry.TABLE_NAME + " (" +
+          AlarmEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+          AlarmEntry.TIME + " UNSIGNED INTEGER (0, 86399)," +
+          AlarmEntry.ENABLED + " UNSIGNED INTEGER (0, 1)," +
+          AlarmEntry.NAME + " TEXT, " +
+          AlarmEntry.DAY_OF_WEEK + " UNSIGNED INTEGER (0, 127)," +
+          AlarmEntry.NEXT_SNOOZE + " UNSIGNED INTEGER DEFAULT 0)");
+AlarmClockProvider.java: Line 269
+
+db.execSQL(
+          "CREATE TABLE " + SettingsEntry.TABLE_NAME + " (" +
+          SettingsEntry.ALARM_ID + " INTEGER PRIMARY KEY, " +
+          SettingsEntry.TONE_URL + " TEXT," +
+          SettingsEntry.TONE_NAME + " TEXT," +
+          SettingsEntry.SNOOZE + " UNSIGNED INTEGER (1, 60)," +
+          SettingsEntry.VIBRATE + " UNSIGNED INTEGER (0, 1)," +
+          SettingsEntry.VOLUME_STARTING + " UNSIGNED INTEGER (1, 100)," +
+          SettingsEntry.VOLUME_ENDING + " UNSIGNED INTEGER (1, 100)," +
+          SettingsEntry.VOLUME_TIME + " UNSIGNED INTEGER (1, 60))");
+    }
+AlarmClockProvider.java: Line 281
+

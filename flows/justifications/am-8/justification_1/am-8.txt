@@ -1,0 +1,15 @@
+Classification: TRUE POSITIVE
+
+[SOURCE] AlarmNotificationService.java:295 -> schedule is created from PendingIntent.getBroadcast(...)
+AlarmNotificationService.java:530 -> onReceive will be invoked with the intent from schedule.
+AlarmNotificationService.java:531 -> alarmid is read from the intent; thus tainted
+AlarmNotificationService.java:543 -> service is started with alarmid and command trigger_alarm_notification.
+AlarmNotificationService.java:126 -> onStartCommand will be invoked when the intent is received.
+AlarmNotificationService.java:132 -> control flow is determined by the command field of the intent.
+AlarmNotificationService.java:133 -> case trigger_alarm_notification will be invoked.
+AlarmNotificationService.java:134 -> handleTriggerAlarm is called with the intent i
+AlarmNotificationService.java:186 -> Call to handleTriggerAlarm
+AlarmNotificationService.java:187 -> alarmid is read in from i (thus tainted)
+AlarmNotificationService.java:206 -> alarmid is added to activeAlarms.alarmids
+AlarmNotificationService.java:279 -> alarmid is obtained from the activeAlarms.alarmids set
+[SINK] AlarmNotificationService.java:288 -> alarmid is written to Log.e
