@@ -16,7 +16,7 @@ The lists of flows are contained in files beginning with all_flows_. These flows
 
 ### Ground Truths
 
-Ground truths are included in files called *_groundtruths.xml. These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth (either TRUE or FALSE).
+Ground truths are included in a file called groundtruths.xml. These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth (either TRUE or FALSE).
 
 ### Justifications
 
