@@ -24,6 +24,8 @@ The justifications for the classifications can be found in the justifications fo
 
 We did not mandate a specific way to encode flows, as we thought that giving students the choice on how to do their investigation would strengthen the confidence of their classifications. Among the various formats chosen are graphml files (which can be opened with yEd or other apps), draw.io files (which can be opened with draw.io), or text descriptions.
 
+Furthermore, since many sources and sinks repeat themselves, we gave students an option to crossreference past classifications they performed for their justification. If a justification crossreferences another investigation, we include those in files beginning with 'crossref-'
+
 # Questions
 
 Please feel free to email me at austin.mordahl@utdallas.edu with any questions.
