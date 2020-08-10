@@ -1,0 +1,20 @@
+FD-445
+classification : Mismatch
+
+Sink:  <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r2, $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void g(android.content.Context,int,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>

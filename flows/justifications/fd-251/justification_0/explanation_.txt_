@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+intentFilter.addAction(PostingService.BROADCAST_ACTION_STATUS);
+MainActivity.java: Line 433

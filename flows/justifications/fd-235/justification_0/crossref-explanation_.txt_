@@ -1,0 +1,18 @@
+All parameters to all possible sinks are constants
+
+Sinks:
+writer.write('[');
+JSONArray.java: Line 953
+
+writer.write(',');
+JSONArray.java: Line 963
+
+writer.write('\n');
+JSONArray.java: Line 966
+
+writer.write('\n');
+JSONArray.java: Line 974
+
+writer.write(']');
+JSONArray.java: Line 978
+

@@ -1,0 +1,5 @@
+fd-230
+1)The SINK is a Log.w() statement, that takes in 2 params, 1st one is a TAG, which is a constant string defined within the class.
+2)2nd is a constant string, and cant be tainted.
+
+Thus, we classify the flow as FALSE POSITIVE.

@@ -1,0 +1,3 @@
+fd-202
+1)The SINK statement does not exist in the check() method of class PinActivity.java
+Thus the flow is classified as MISMATCH

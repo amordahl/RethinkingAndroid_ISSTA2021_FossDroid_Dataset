@@ -1,0 +1,5 @@
+fd-235
+1)The SINK is a  Writer.write() statement, that takes in only one parameter.
+2)On inspecting the XML, we see that the value of the parameter is '10'. When we convert 10 to a character, we
+get '/n' as the resulting character, whose ASCII value is 10. 
+Since this character is constant, the flow is classified as FALSE POSITIVE.

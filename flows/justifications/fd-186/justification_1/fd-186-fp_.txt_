@@ -1,0 +1,9 @@
+fd-186
+1)The SINK invokes the query method on the ContentResolver, and passes 5 parameters to it
+2)The 1st one is the ALARMS_URI, which is a constant URI object
+3)2nd one is an array of Strings, in which all elements are string constants declared in class AlarmClockProvider.AlarmEntry
+4)3rd is the selection criteria, i.e. the column name, declared as a constant string.
+5)Last 2 parameters are null.
+6)Thus, all parameters are constants, declared in the class AlarmClockProvider. There is no need to backtrack them further.
+
+The flow can thus be classified as FALSE POSITIVE

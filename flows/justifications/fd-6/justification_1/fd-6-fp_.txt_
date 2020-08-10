@@ -1,0 +1,14 @@
+fd - 6
+1) Our source getContentResolver().query() takes in the following parameters:
+	1.1) AlarmClockProvider.ALARMS_URI: a constant string in AlarmClockProvider class
+	1.2) a string array, which are projection parameters, with all the elements as constants from AlarmClockProvider class
+	1.3) a string, which is a selection criteria, which is again a constant in the AlarmClockProvider class.
+all these params cannot be tainted. 
+2) The Log.i() statement takes in 2 params => TAG and alarmid
+3) TAG is a constant, which is generated within the activity, thus cannot be tainted.
+4) alarmid is formed from the intent extra, AlarmNotificationService.ALARM_ID. If the value is not present, alarmid takes the default
+value from DbUtil.Settings.DEFAULTS_ID (a constant). Since alarmid comes from an intent extra, source needs to fire an intent, or pass the
+cursor object to another class, which in turn, fires an intent for AlarmNotificationActivity.java
+5) However, the cursor is only used once in the method (c.get_count()) and is no where passed forward. 
+
+Hence, the flow is classified as FALSE POSITIVE.

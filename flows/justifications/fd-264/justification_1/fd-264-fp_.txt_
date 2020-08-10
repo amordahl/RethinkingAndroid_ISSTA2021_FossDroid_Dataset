@@ -1,0 +1,8 @@
+fd-264
+1)The sendBroadcast() method takes an Intent object. There are 7 places from where sendBroadcast() is called from run(). 
+2) Out of the 7, 5 calls to sendBroadcast() takes an Intent object, with only an Intent Action. The action is a constant string, and is used only to identify the 
+BroadcastReceiver that receives the Broadcast. 
+3) The remaining 2 calls contain an Integer Extra, along with the action. This extra integer is defined within the class, and is
+used in the Broadcast Receriver only in a switch-case expression.
+
+Thus, the data into the SINK does not come from the SOURCE, and thus the flow is classified as FALSE POSITIVE

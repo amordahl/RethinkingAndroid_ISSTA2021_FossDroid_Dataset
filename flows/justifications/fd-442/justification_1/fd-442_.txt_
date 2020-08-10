@@ -1,0 +1,20 @@
+FD-442
+classification : Mismatch
+
+Sink:   <reference type="to">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r2.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)&gt;("lastRinger", $i0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"lastRinger"</value>
+                        </parameter>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void i(android.content.Context,int)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>

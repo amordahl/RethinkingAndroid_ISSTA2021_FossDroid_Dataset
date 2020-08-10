@@ -1,0 +1,6 @@
+Sink is filled with constants
+
+Sink:
+
+getContext().registerReceiver(dismissReceiver, new IntentFilter(Intent.ACTION_CLOSE_SYSTEM_DIALOGS));
+ClickableToast.java: Line 75

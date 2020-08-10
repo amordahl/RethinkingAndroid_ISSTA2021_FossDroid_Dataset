@@ -1,0 +1,4 @@
+All parameters to the sink are constants.
+
+Sink: c = r.query(ALARMS_URI, ... , ENABLED + " == 1", null, null);
+SystemMessageReceiver.java: Line 83

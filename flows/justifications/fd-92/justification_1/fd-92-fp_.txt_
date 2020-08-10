@@ -1,0 +1,13 @@
+fd-92
+1) The sink tries to start a service.
+2) For that, we are making a new intent object, with the intent's destination class, and an intent extra,
+with a constant string as the value
+3) There is no other parameter being passed to the sink, apart from Context. On tracing backwards, we find that there are 2 places from where 
+dismissAllAlarms(Context c) is called
+    3.1)AlarmNotificationActivity.java => onComplete() {Line 97}: Context passed using getApplicationContext()
+    3.2)AlarmNotificationService.java => class ActiveAlarms => {Line 460}: Context passed in the constructor
+        On tracing back from the constructor, we find that the Context is passed to the constructor by using 
+        getApplicationContext() {Line 201, AlarmNotificationService.java, method handleTriggerAlarm()}. 
+    Since at both the locations, the context is generated within the file, we dont need to trace back.
+
+We can safely classify the flow as FALSE POSITIVE.

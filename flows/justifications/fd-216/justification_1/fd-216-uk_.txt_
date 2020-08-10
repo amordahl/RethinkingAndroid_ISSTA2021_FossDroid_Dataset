@@ -1,0 +1,3 @@
+fd-216
+1)Our SINK statement, Outputstream.write(...) is used at over 50 locations in the applivation
+2)It is not feasible to investigate all these usages, hence we mark it as UNKNOWN

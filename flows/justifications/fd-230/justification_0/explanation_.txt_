@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+Log.w(TAG, "Couldn't set home-as-up indicator");
+ActionBarDrawerToggleHoneycomb.java: Line 50

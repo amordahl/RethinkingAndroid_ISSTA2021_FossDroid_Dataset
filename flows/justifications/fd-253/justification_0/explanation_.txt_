@@ -1,0 +1,7 @@
+All parameters to the sink are constant
+
+registerReceiver(broadcastReceiver, intentFilter);
+MainActivity.java: Line 445
+
+broadcastReceiver gets created and only used once
+intentFilter gets created and then gets supplied 2 constants, never used again.

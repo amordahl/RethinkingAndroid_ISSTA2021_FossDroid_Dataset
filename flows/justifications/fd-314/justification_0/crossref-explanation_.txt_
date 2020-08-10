@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+sendBroadcast(new Intent(BROADCAST_ACTION_NOTIFY));
+TabsTrackerService.java: Line 354

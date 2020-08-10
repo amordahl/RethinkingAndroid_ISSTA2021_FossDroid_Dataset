@@ -1,0 +1,6 @@
+The sink just prints out an exception
+
+Sink:
+
+Log.w(TAG, "Couldn't set home-as-up indicator via JB-MR2 API", e);
+ActionBarDrawerToggleHoneycomb.java: Line 50

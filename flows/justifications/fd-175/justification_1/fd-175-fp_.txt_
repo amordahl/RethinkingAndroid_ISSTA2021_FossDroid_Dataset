@@ -1,0 +1,10 @@
+fd-175
+1)The SINK invokes the update method on the ContentResolver, and passes 4 parameters to it.
+2)The 1st one is the ALARMS_URI, which is a constant URI object declared in the AlarmClockProvider class.
+3)2nd one is an object of the ContentValues() class. The object, "val", takes in key-value pairs. The key is a constant string 
+declared in AlarmClockProvider.AlarmEntry class, whereas the value is a constant integer, 0.
+4)Last 2 parameters to the .update() method are null.
+5)Thus, all parameters are effectively constants and there is no need to backtrack them further.
+
+The flow can thus be classified as FALSE POSITIVE.
+

@@ -1,0 +1,11 @@
+fd-107
+1)The SINK attempts to invoke a startService() method on the Context object.
+2)It takes only one parameter, which is an Intent object.
+3)The intent takes one parameter, which is the Context object itself, on which the startService() is invoked. 
+    3.1)On tracing back, we find that the method maybeShowDismiss() [Which has our SINK statement], was called
+        from the onStart() method of AlarmClockActivity(), which passes the Context to it, using "this" keyword, which 
+        is a constant.
+4)The intent also has an "extra" data, which has key-value pairs as string constants declared within AlarmNotificationService.java
+
+Thus, all the data to the SINK is essentially constant, and thus, the flow is classified as 
+FALSE POSITIVE.

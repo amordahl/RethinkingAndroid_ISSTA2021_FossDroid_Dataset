@@ -1,0 +1,8 @@
+fd-224
+1)registerReceiver() takes 2 parameters.
+    1.1)Object of BroadcastReceiver
+    1.2)Object of IntentFilter
+2)BroadcastReceiver doesnt take any additional parameter for its constructor and thus cant be tainted.
+3)IntentFilter takes a constant string, thus cant be tainted.
+
+Thus we classify the flow as FALSE POSITIVE
