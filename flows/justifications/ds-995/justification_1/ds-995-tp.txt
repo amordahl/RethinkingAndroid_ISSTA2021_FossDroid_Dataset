@@ -1,0 +1,4 @@
+ds-995
+1)Our SOURCE statement getTimeInMillis() is used to calculate a variable get_pixels_time. 
+2)This variable is wriiten to the the Logs,which is our SINK statement
+Thus we mark it as TRUE POSITIVE

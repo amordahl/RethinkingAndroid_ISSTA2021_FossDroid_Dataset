@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+w.write("text/html;\r\n\tcharset=\?utf-8\"");
+WritableMHTML.java: Line 126

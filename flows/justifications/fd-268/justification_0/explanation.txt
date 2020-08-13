@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+buf.write(DATA_DIR + "/" + DOLLSCRIPT);
+HtmlBuilder.java: Line 226

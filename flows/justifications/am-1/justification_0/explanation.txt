@@ -1,0 +1,10 @@
+Same sink as am-0.
+
+This is true because the
+
+source:
+.setContentIntent(PendingIntent.getActivity(this, 0, notify, 0))
+AlarmNotificationService.java: Line 229
+
+Once this is notification gets clicked on, it opens the intent notify
+which then opens up the AlarmNotificationActivity and cross reference the am-0 graph

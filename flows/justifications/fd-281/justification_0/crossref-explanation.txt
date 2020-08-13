@@ -1,0 +1,6 @@
+All parameters to the sink are constant
+
+Sink:
+bindService(new Intent(this, GalleryBackend.class), new ServiceConnection(){..}, BINDING_FLAGS);
+GalleryActivity.java: Line 239
+

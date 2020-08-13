@@ -1,0 +1,5 @@
+ds-1061
+1)The SINK statement is a Log.d() statement.
+2)Both the parameters of this statement are constant strings and thus cant be tainted
+
+Thus we mark the flow as FALSE POSITIVE

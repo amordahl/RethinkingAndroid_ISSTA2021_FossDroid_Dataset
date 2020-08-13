@@ -1,0 +1,5 @@
+fd-297
+1)The addAction() method of IntentFilter takes in a String parameter.
+2)In our SINK, the string parameter is constant and does not flow from outside the method.
+
+Thus we classify it as FALSE POSITIVE

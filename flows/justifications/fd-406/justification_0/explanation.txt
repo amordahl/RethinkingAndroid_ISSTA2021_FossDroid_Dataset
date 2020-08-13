@@ -1,0 +1,4 @@
+All parameters to the sink are constant.
+
+Sink: contactsCursor = getContentResolver().query(Phone.CONTENT_URI, PROJECTION, Phone.HAS_PHONE_NUMBER+"=1", null, Phone.DISPLAY_NAME);
+PickContactNumberActivity.java: Line 28

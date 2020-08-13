@@ -1,0 +1,5 @@
+Value being printed out is graphed in ds-995
+
+
+Sink: Log.d(TAG, "Service: Updated output dir to: " + new_dir);
+AndroSSService.java: Line 175

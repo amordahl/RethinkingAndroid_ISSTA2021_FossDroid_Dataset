@@ -1,0 +1,15 @@
+Source and sink are the same statement.
+Filled with constants and we know id isnt tainted because it's lifecycle is graphed in fd-7
+
+Sink:
+
+context.getContentResolver().query(
+          ContentUris.withAppendedId(AlarmClockProvider.ALARMS_URI, id),
+          new String[] {
+            AlarmClockProvider.AlarmEntry.TIME,
+            AlarmClockProvider.AlarmEntry.ENABLED,
+            AlarmClockProvider.AlarmEntry.NAME,
+            AlarmClockProvider.AlarmEntry.DAY_OF_WEEK,
+            AlarmClockProvider.AlarmEntry.NEXT_SNOOZE },
+          null, null, null);
+DbUtil.java: Line 33

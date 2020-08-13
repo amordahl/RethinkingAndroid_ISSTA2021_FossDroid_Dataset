@@ -1,0 +1,16 @@
+All parameters to all Possible sinks are constants
+
+Sinks 1 through 5:
+sendBroadcast(new Intent(BROADCAST_UPDATED));
+
+Sink 6:
+sendBroadcast(broadcast)
+DownloadingService.java: Line 742
+
+broadcast is filled with some constant strings
+
+Sink 7: 
+sendBroadcast(broadcast)
+DownloadingService.java: Line 759
+
+broadcast is filled with constant strings

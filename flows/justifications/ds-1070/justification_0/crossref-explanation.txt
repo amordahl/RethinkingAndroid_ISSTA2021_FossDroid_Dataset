@@ -1,0 +1,6 @@
+All parameters to the sink are constants
+variable i is filled with constants
+
+Sink:
+context.startService(i);
+CameraButtonReceiver.java: Line 17

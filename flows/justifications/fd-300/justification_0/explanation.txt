@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+activity.sendBroadcast(new Intent(BROADCAST_PAGE_LOADED));
+BoardFragment.java: Line 1325

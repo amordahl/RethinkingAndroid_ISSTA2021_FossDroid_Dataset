@@ -1,0 +1,9 @@
+The sink only gets called when the serviceInfo created on Line 731 of Channel.java is null
+this means that the serviceInfo is not apart of the active service list.
+
+the source adds itself to the active service list 
+but the sink never interacts with the source because the sink only gets called when a service isn't found
+
+Sink:
+Log.w( LOG_TAG, m_name + ": internal error: service not found: " + nsdServiceInfo );
+Channel.java: Line 737

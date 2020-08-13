@@ -1,0 +1,5 @@
+Sink is filled with constants.
+
+Sink:
+Log.e(TAG, "Unhandled intent!");
+AlarmNotificationService.java: Line 124

@@ -1,0 +1,20 @@
+FD-435
+classification : Mismatch
+
+Sink:  <reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)&gt;($r2, $f0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>float</type>
+                            <value>$f0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void b(android.content.Context,int,double)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>

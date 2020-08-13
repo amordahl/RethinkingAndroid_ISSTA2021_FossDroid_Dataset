@@ -1,0 +1,6 @@
+fd - 139
+1) The sink statement is Log.w(TAG, "Releasing wake lock with active alarms! (" + alarmids.size() + ")");
+2) TAG is a constant string, written within the same class
+3) The second parameter is the size of Hashset<> alarmids. Since we cannot recover the data
+    written into the hashset from its size, we can classify the flow as FALSE POSITIVE.
+

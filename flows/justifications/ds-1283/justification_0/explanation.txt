@@ -1,0 +1,9 @@
+Source statement dies and never interacts with anything.
+
+Source: device = InputDevice.getDevice(id);
+GameView.java: Line 1951
+
+
+variable device then gets passed lastGamepadId
+
+lastGamepadID then dies.

@@ -1,0 +1,7 @@
+All parameters to the sink are constant
+
+Sink:
+startActivityForResult(i, REQUEST_CODE_ATTACH_GALLERY);
+PostFormActivity.java: Line 280
+
+the intent i is filled with constants

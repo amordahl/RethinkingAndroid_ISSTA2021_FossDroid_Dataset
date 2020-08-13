@@ -1,0 +1,15 @@
+Source and sink statements are the same.
+Id is not tainted (we know this from fd-7)
+
+Sink: context.getContentResolver().query(
+          ContentUris.withAppendedId(AlarmClockProvider.SETTINGS_URI, id),
+          new String[] {
+            AlarmClockProvider.SettingsEntry.TONE_URL,
+            AlarmClockProvider.SettingsEntry.TONE_NAME,
+            AlarmClockProvider.SettingsEntry.SNOOZE,
+            AlarmClockProvider.SettingsEntry.VIBRATE,
+            AlarmClockProvider.SettingsEntry.VOLUME_STARTING,
+            AlarmClockProvider.SettingsEntry.VOLUME_ENDING,
+            AlarmClockProvider.SettingsEntry.VOLUME_TIME },
+          null, null, null);
+DbUtil.java: Line 114

@@ -1,0 +1,7 @@
+fd - 137
+1) There are multiple Log.e statements in the sink method, which is in fact a constructor for a class.
+2)All the Log.e statements take 2 parameters each. The first one is TAG, which is generated within the file.
+3)The next parameter has a string, to which an object of IOException is concatenated. Since this object is generated 
+within the try-catch block, and is not passed by any other method, there is no need to investigate the data flow further
+
+The flow can be classified as FALSE POSITIVE.

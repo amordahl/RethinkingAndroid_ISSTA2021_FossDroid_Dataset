@@ -1,0 +1,3 @@
+fd-220
+1)The SINK statement invokes the write() method on OutputStreamWriter, and writes a constant string in it.
+2)Thus the data cannot flow from the SOURCE, and can be classified as FALSE POSITIVE

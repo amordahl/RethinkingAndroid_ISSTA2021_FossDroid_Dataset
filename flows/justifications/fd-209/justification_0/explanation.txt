@@ -1,0 +1,6 @@
+All parameters to the sink are cosntant
+
+Sink:
+
+Log.d(PlatformUtil.TAG, "Location service permission not granted");
+NavigationService.java: Line 172

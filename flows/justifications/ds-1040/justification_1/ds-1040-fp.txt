@@ -1,0 +1,4 @@
+ds-1040
+1)The SOURCE statement, getDefaultUri(...) returns a URI object. This URI is used to fetch a ringtone, on thich we invoke the play() method. 
+2)The ringtone or URI object is not used anywhere in the app other than this location.
+Thus we mark it as FALSE POSITIVE.

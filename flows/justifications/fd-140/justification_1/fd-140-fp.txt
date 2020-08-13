@@ -1,0 +1,5 @@
+fd - 140
+1) The sink is a Log statement, which takes 2 arguments: a TAG, and a constant string.
+2) TAG is generated within the class and is a constant string. It doesnt flow from outside the class.
+
+Thus the flow cant be tainted. The classification is FALSE POSITIVE

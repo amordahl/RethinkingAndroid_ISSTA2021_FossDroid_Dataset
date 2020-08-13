@@ -1,0 +1,18 @@
+In the very specific case of 
+
+1. We receive an Intent of the ACTION_DIAL type
+2. It contains a phone number
+3. We dial that phone number and set it's text to numberField
+4. the User presses the btn_call button to call the callNumber() method
+
+This is true when this happens (this is not a flow i can graph
+ because in the app we never send an
+ ACTION_DIAL type but we can receive them from other apps)
+
+code for step 3:
+numberField.setText(number);
+DialerActivity.java: Line 369
+
+code for step 4:
+case R.id.btn_call: callNumber(numberField.getText().toString()); break;
+DialerActivity.java: Line 202

@@ -1,0 +1,9 @@
+Sink is just printing out an error
+
+Sink: Log.e(LOG_TAG, ex.toString());
+AudioRecorder.java: Line 263
+
+ex is from
+
+catch(final InterruptedException ex)
+AudioRecorder.java: Line 261

@@ -1,0 +1,5 @@
+ds-1056
+1)The SINK statement is startService(..) that takes in an Intent object
+2)The intent hs only one intent extra, which is a constant value.
+3)No data going into the intent and the SINK comes from outside the class.
+Thus we can mark it as FALSE POSITIVE

@@ -1,0 +1,9 @@
+sink is just printing out an error
+
+Sink:
+Log.d(LOG_TAG, ex.toString());
+Channel.java: Line 641
+
+
+ex is from catch(final IOException ex)
+Channel.java: Line 639

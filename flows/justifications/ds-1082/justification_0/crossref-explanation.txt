@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+startActivityForResult(i, 0);
+ConfigurationActivity.java: Line 69

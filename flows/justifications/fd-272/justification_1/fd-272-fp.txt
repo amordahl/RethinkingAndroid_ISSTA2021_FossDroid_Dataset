@@ -1,0 +1,4 @@
+fd-272
+1)The SINK is a Writer.write statement and takes 1 parameter (String).
+2)In our sink statement, the parameter is a constant string, and does not flow from outside the method. 
+Thus the flow is classified as FALSE POSITIVE.

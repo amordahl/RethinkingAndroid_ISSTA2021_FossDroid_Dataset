@@ -1,0 +1,11 @@
+All parameters to all possible sinks are filled with constants.
+All the startActivity(i) calls in startEditor() are filled with constant strings (that tell android where to look for the activity)
+
+Sink 1: startActivity(i);
+FrozenBubble.java: Line 1352
+
+Sink 2: startActivity(i);
+FrozenBubble.java: Line 1361
+
+Sink 3: startActivity(i);
+FrozenBubble.java: Line 1374

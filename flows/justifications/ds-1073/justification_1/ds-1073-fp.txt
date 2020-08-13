@@ -1,0 +1,4 @@
+ds-1073
+1)The SINK statement is a startActivity() statement, and takes an Intent as the parameter.
+2)The intent doesnt have any extra attached to it.
+Thus we can mark it as FALSE POSITIVE.

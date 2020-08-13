@@ -1,0 +1,11 @@
+Same sink as ds-1509. 
+This source interacts with the callNumber() method which in turn calls a number and adds it to the CallLog.Calls table
+Same logic as ds-1509, different source.
+
+Source:
+voiceMailNumber = telephonyManager.getVoiceMailNumber();
+DialerActivity.java: Line 631
+
+Call to callNumber():
+callNumber(voiceMailNumber);
+DialerActivity.java: Line 633

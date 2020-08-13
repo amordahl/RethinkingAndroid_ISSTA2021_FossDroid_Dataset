@@ -1,0 +1,31 @@
+FD-453
+classification : Mismatch
+
+Sink:      <reference type="to">
+                <statement>
+                    <statementfull>$r8 = virtualinvoke $r6.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r7, $r2, $r5, null, "begin")</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r7</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r5</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"begin"</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b.a: uk.co.yahoo.p1rpp.calendartrigger.b.a$a a(android.content.Context,long)&gt;</method>

@@ -1,0 +1,4 @@
+ds-1002
+1)The SOURCE statement, getTimeInMillis() is used to calculate a variable "get_pixels_time".
+2)This variable is used only once, in a Log.d() statement.
+3)Since our sink is not this Log.d() statement, we mark it as FALSE POSITIVE

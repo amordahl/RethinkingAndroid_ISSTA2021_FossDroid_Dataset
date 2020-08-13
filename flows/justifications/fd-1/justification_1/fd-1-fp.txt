@@ -1,0 +1,9 @@
+fd - 1
+1) 4 params taken by our sink, getContentResolver().update() => URI, ContentValue, String, String[]
+2) String and String[] are nulls, so we can ignore those.
+3) Lets focus on ContentValues.
+	3.1)ContentValue "val" generated inside the method, and we put in 2 keys: AlarmClockProvider.AlarmEntry.ENABLED and
+	    AlarmClockProvider.AlarmEntry.NEXT_SNOOZE. Both of them are constants and cannot be tainted. Their values are also constants.
+	    so, this variable cannot be tainted.
+	3.2)The AlarmClockProvider provides us with the URI, whos parameters are also constants declared within that class. So, it cannot be tainted.
+4) No parameter can be traced back to the source and hence, It is a FALSE POSITIVE 

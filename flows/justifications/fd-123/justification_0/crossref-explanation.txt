@@ -1,0 +1,4 @@
+Taint is effectively killed by the alarmids.size() call (it's just the size of the list)
+
+Sink: Log.w(TAG, "Releasing wake lock with active alarms! (" + alarmids.size() + ")");
+AlarmNotificationService.java: Line 505

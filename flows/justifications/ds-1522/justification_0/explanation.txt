@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+setResult(RESULT_CANCELLED, null);
+PickContactNumberActivity.java: Line 35

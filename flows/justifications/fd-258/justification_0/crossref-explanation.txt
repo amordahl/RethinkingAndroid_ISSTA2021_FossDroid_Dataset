@@ -1,0 +1,9 @@
+All parameters to the sink are constants
+
+Sink:
+
+registerReceiver(broadcastReceiver, intentFilter);
+DownloadingProgressActivity.java: Line 105
+
+broadcastReceiver is just created and doesn't store anything in itself
+intentFilter is just created and then has a constant Action added to it

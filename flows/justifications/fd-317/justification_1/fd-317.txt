@@ -1,0 +1,12 @@
+FD-317
+
+Sink:virtualinvoke $r1.&lt;android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)&gt;("phoneTypes", $r3)
+<method>&lt;org.dnaq.dialer2.ContactViewDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+
+Soruce: $r9 = interfaceinvoke $r12.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(2)
+<method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+
+Classification:FALSE
+Explanation:Similar to 316.
+Phonetype is not the param that is passed from source to sink.
+Data from source here is going to CallLog activity using startQuery and then in Oncompletequery nothing is going to sink.

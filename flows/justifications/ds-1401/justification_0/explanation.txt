@@ -1,0 +1,5 @@
+Lifecycle of audioVolume is graphed in ds-1390 and audioStream is a constant.
+
+Sink:
+Log.d(LOG_TAG, "setStreamVolume(" + audioStream + ", " + audioVolume + ")");
+MainActivity.java: Line 202

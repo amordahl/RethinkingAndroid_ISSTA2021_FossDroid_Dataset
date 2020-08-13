@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+sendBroadcast(new Intent(BROADCAST_UPDATED));
+DownloadingService.java: Line 232

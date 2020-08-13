@@ -1,0 +1,9 @@
+All parameters to all possible sinks are constant
+
+Sink 1:
+.setContent(R.id.tab1));
+Help.java: Line 18
+
+SInk 2:
+.setContent(R.id.tab2));
+Help.java: Line 19

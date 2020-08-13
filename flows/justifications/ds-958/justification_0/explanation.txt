@@ -1,0 +1,11 @@
+Paramters to all possible sinks are just SecurityException errors
+
+Sink 1:
+
+Log.e(TermDebug.LOG_TAG, "Generating shortcut encryption keys failed: " + e.toString());
+AddShortcut.java: Line 237
+
+Sink 2:
+
+Log.e(TermDebug.LOG_TAG, "Shortcut encryption failed: " + e.toString());
+AddShortcut.java: Line 253

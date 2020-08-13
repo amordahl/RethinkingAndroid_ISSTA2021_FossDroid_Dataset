@@ -1,0 +1,14 @@
+ds-1003
+1)There are 4 Log.d() statements in the sink method.
+    1.1)Log.d(TAG, "Service: Getting framebuffer pixels.") : both constant strings
+    1.2)Log.d(TAG, "Service: Creating bitmap."); : both constant strings
+    1.3)Log.d(TAG, "Service: Write to " + AndroSSService.getOutputDir(this) + filename + ": "+ (success ? "succeeded" : "failed"));
+            only variable to be examined is filename. We get filename from calToStr(), which is not our SOURCE
+    1.4)Log.d(TAG, "Service: Screenshot taken in " +
+                    String.valueOf(total_time) +
+                    "ms (latency: " +
+                    String.valueOf(get_pixels_time) +
+                    "ms, compression: " +
+                    String.valueOf(compress_time) +
+                    "ms).") : the variables total_time, get_pixels_time, compress_time are all calculated within the function
+    Thus, data doesnt flow from the SOURCE, and so we mark the flow as FALSE POSITIVE.

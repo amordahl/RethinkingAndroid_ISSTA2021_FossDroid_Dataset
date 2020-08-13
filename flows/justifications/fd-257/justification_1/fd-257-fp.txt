@@ -1,0 +1,6 @@
+fd-257
+1) The SINK statement, registerReceiver() takes 2 parameters. An IntentFilter and a BoradcastReceiver. 
+2)The IntentFilter contains only an Intent Action, which is a constant string.
+3)BoradcastReceiver is defined within the class. The intent of the BoradcastReceiver has an  Integer Extra, which is a constant defined within the application.
+
+Thus, the data does not flow from the SOURCE and the flow is classified as FALSE POSITIVE

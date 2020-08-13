@@ -1,0 +1,12 @@
+fd-222
+1)There are 4 instances of Writer.write() in the SINK method, which take in some parameter. 
+    1.1)w.write(String.format(Locale.US, "From: <%s>\r\n", MHT_FROM));
+    1.2)w.write(String.format(Locale.US, "Subject: %s\r\n", MHT_SUBJ));
+    1.3)w.write(String.format(Locale.US, "Date: %s\r\n", MHT_DATE_FORMAT.format(System.currentTimeMillis())));
+    1.4)w.write(String.format(Locale.US, "\tboundary=\"%s\"\r\n\r\n", boundary));
+2)The other 4 instances of Writer.write take only constant strings, thus cannot be tainted.
+3)Consider (1.1) and (1.2). They take in variables MHT_FROM, MHT_SUBJ, which are constants defined within the class.
+  (1.3) also takes in a variable, which is a Date Formatter object. The date formatter takes in the current time in 
+  millis, and thus cant be tainted. 
+
+Thus, data doesnt flow from the SOURCE and the flow is classified as FALSE POSITIVE.

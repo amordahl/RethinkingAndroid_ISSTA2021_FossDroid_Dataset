@@ -1,0 +1,11 @@
+Crossref fd-193 (explains why widgetIds in onUpdate is not tainted)
+widgetId comes from 
+
+widgetId = widgetIds[i];
+WidgetProvider.java: Line 38
+
+Widgetids is not tainted.
+
+Sink:
+Log.d("Budget", "WidgetProvider.id="+widgetId);
+WidgetProvider.java: Line 39

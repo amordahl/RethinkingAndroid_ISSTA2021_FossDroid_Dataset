@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+Log.d(TAG, 'CameraButtonReceiver: handling broadcast.");
+CameraButtonReceiver.java: Line 14

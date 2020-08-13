@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+myfile.write(Base64.decode(AndroSSnative.native64, Base64.DEFAULT));
+AndroSSService.java: Line 445

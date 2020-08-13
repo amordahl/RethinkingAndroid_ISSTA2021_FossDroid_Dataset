@@ -1,0 +1,13 @@
+All parameters to all possible sinks are either constant or untaintable (boundary is filled with random string)
+
+Sink:
+	w.write(String.format(Locale.US, "From: <%s>\r\n", MHT_FROM));
+        w.write(String.format(Locale.US, "Subject: %s\r\n", MHT_SUBJ));
+        w.write(String.format(Locale.US, "Date: %s\r\n", MHT_DATE_FORMAT.format(System.currentTimeMillis())));
+        w.write("MIME-Version: 1.0\r\n");
+        w.write("Content-Type: multipart/related;\r\n");
+        w.write("\ttype=\"text/html\";\r\n");
+        w.write(String.format(Locale.US, "\tboundary=\"%s\"\r\n\r\n", boundary));
+        w.write("This is a multi-part message in MIME format.\r\n\r\n");
+
+WritableMHTML.java: Line 92

@@ -1,0 +1,20 @@
+FD-443
+classification : Mismatch
+
+Sink:   <reference type="to">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r2.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;("locationActive", $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"locationActive"</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void d(android.content.Context,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>

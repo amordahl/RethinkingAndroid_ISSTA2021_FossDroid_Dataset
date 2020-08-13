@@ -1,0 +1,29 @@
+All possible sinks are filled with constants.
+
+Sink 1:
+Log.d( LOG_TAG, "STATE_DOWN -> STATE_DRAGGING_RIGHT" );
+SwitchButton.java: Line 208
+
+Sink 2:
+Log.d( LOG_TAG, "STATE_DOWN -> STATE_DRAGGING_LEFT" );
+SwitchButton.java: Line 213
+
+Sink 3:
+Log.d( LOG_TAG, "STATE_DRAGGING_RIGHT -> STATE_DRAGGING_DOWN" );
+SwitchButton.java: Line 234
+
+Sink 4:
+Log.d( LOG_TAG, "STATE_DRAGGING_RIGHT -> STATE_IDLE" );
+SwitchButton.java: Line 240
+
+Sink 5:
+Log.d( LOG_TAG, "STATE_DRAGGING_LEFT -> STATE_DRAGGING_DOWN" );
+SwitchButton.java: Line 255
+
+Sink 6: 
+Log.d( LOG_TAG, "STATE_DRAGGING_LEFT -> STATE_IDLE" );
+SwitchButton.java: Line 261
+
+Sink 7:
+Log.d( LOG_TAG, "STATE_DRAGGING_DOWN -> STATE_IDLE" );
+SwitchButton.java: Line 275

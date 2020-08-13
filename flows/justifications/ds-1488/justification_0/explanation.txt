@@ -1,0 +1,10 @@
+All parameters to the sink are constant
+
+Sink:
+startActivity(intent);
+TP_AMActivity.java: Line 58
+
+
+intent is just a constant
+intent = new Intent(this, MyPreferencesActivity.class)
+TP_AMActivity.java: Line 57
