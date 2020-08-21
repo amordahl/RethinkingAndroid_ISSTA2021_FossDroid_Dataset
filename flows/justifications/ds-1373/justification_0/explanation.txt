@@ -1,0 +1,8 @@
+same explanation as ds-1364.  Sometimes the service doesn't get resolved but the serviceInfo is still all coming from the same place
+
+error code is just the error code the nsdManager handed off to us so it's not taintable
+
+sink:
+
+Log.i(LOG_TAG, m_name + ": onResolveFailed: " + nsdServiceInfo+  "errorCode=" + errorCode);
+Channel.java: Line 264

@@ -1,0 +1,7 @@
+ds-1197
+1)The SOURCE statement generates a URI object, which is passed into the intent. This intent has the action ACTION_VIEW
+2)ACTION_VIEW is accessed at only one location in the app, parseInt() in DialerActivity.java
+3)In this method, the uri object is extracted from the intent, and another string "number" is extracted from the URI
+4)This number is passed on to a method dialNumber(), which only sets it on an EditText.
+
+Thus we cna mark the flow as FALSE POSITIVE

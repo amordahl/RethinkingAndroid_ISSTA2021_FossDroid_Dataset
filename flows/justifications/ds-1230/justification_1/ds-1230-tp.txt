@@ -1,0 +1,8 @@
+ds-1230
+1)Data from SOURCE is stored in variable "s"
+2)Data in "s" is split into a String[] path. 
+3)Using each element in path, a file object is being made. 
+4)using file.getAbsolute(), the full path and filename are passed to execShell(). Thus, data from SOURCE ultimately reaches execShell().
+5)In execShell(), the data from point (1) is received in the parameter args. 
+6)args is used to make another object cmd, and the SINK method start() is invoked on cmd.
+Thus, it is a TRUE POSITIVE.

@@ -1,0 +1,4 @@
+ds-1134
+1)The SINK statement takes in only 1 parameter: ActivityInfo.SCREEN_ORIENTATION_PORTRAIT or ActivityInfo.SCREEN_ORIENTATION_SENSOR
+2)Both of these are predefined in the Android OS, thus cant be tainted.
+Thus we mark the flow as FALSE POSITIVE

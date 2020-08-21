@@ -1,0 +1,3 @@
+This sink is either true or unknown.
+I can't find a specific instance of it being true for this case but 
+i also can't list it as false because any number of things can modify the CallLog.Calls table

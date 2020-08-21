@@ -1,0 +1,5 @@
+sink has no parameters
+
+Sink:
+process = cmd.start()
+DebianKitActivity.java: Line 32

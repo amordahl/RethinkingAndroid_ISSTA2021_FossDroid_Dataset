@@ -1,0 +1,12 @@
+Source and sink are the same statement
+
+Sink: final Cursor c = getContentResolver().query(
+        AlarmClockProvider.ALARMS_URI,
+        new String[] { AlarmClockProvider.AlarmEntry.TIME,
+                       AlarmClockProvider.AlarmEntry.ENABLED,
+                       AlarmClockProvider.AlarmEntry.NAME,
+                       AlarmClockProvider.AlarmEntry.DAY_OF_WEEK,
+                       AlarmClockProvider.AlarmEntry.NEXT_SNOOZE },
+        AlarmClockProvider.AlarmEntry.ENABLED + " == 1",
+        null, null);
+AlarmNotifcationService.java: Line 327

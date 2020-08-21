@@ -1,0 +1,8 @@
+All parameters to the sink are consatnt
+
+Sink:
+
+startActivity(intent);
+DebianKitActivity.java: Line 384
+
+intent is a constant

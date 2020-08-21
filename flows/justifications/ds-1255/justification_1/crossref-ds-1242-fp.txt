@@ -1,0 +1,4 @@
+ds-1242
+1)THe output from the SOURCE is taken into variable "x"
+2)This variable is used only for boolean operations in the function and is not passed out of the function.
+THus we mark it as FALSE POSITIVE

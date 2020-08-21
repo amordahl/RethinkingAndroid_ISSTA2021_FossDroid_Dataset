@@ -1,0 +1,23 @@
+ds-1221
+1)There are 5 instances of our SOURCE statement getDataDirectory(). Lets look at each one of them.
+    1.1.1)output from getDataDirectory() is fed to Pattern.compile(). This is used to match the variable "line" with the compiled Pattern
+    1.1.2)A part of the pattern is accessed at Matcher m.group(1) [Line 216]. This part is from a different part of the pattern, and has nothing to do with the
+          output from our source. This can be ignored
+    
+    1.2.1)output of the SOURCE is applied to the member "s" of the object v_mnt [Line 226]
+    
+    1.3.1)Same as 1.2.1 [Line 232]
+    
+    1.4.1)Same as 1.2.1 [Line 239]
+
+    After setting the value of member "s" of v_mnt object, it is passed on to publishProgress(). The variable is later accessed
+    in onPublishProgress(). However, in that method, this member "s" is not used. There are no other locations in the app, where data from 
+    v_mnt.s is used.
+
+    1.5.1)output of the SOURCE is applied to the member "s" of the object v_deb [Line 308]
+    1.5.2)After setting the value of member "s" of v_deb object, it is passed on to publishProgress(). The variable is later accessed
+          in onPublishProgress(). However, in that method, this member "s" is not used. There are no other locations in the app, where data from 
+          v_mnt.s is used.
+
+Thus, the flow is classified as FALSE POSITIVE
+

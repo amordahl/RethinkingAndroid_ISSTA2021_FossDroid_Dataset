@@ -1,0 +1,5 @@
+ds-1097
+1)The ArrayList<> generated at the SOURCE statement is added into an Intent using putExtra().
+2)This intent is then used in setResult() which is our SINK.
+
+Thus we mark the flow as TRUE POSITIVE

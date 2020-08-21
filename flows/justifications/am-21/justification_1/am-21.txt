@@ -1,0 +1,25 @@
+am-21
+classification : Mismatch
+
+ <reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: void a()&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>

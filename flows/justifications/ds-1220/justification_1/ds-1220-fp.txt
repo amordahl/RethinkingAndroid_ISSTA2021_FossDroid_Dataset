@@ -1,0 +1,8 @@
+ds-1220
+1)There are 4 instances of readLine() in the SOURCE method. 
+2)In one of those instances, on line 127, the output from readLine is only used for boolean operation.
+3)At other 3 places (Line 109, 144, 214), the output is formatted and set on the member "s" of objects v_mem, v_ext, v_mnt. 
+4)Later, these 4 objects are passed to a method publishProgress, which are then accessible in onPregressUpdate() [data passed to publishProgress()
+of AsyncTask class is accessible in onProgressUpdate() of AsyncTask]
+5)In onProgressUpdate(), the member "s" of verdict object is not accessed at all. 
+6)There are no other instances where data from the source, or method "s" is accessed. Thus we mark it as FALSE POSITIVE. 

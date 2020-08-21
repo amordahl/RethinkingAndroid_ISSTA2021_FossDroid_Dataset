@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+webView.loadUrl("file:///android_asset/debian-kit-en.html");
+ReadmeActivity.java: Line 17

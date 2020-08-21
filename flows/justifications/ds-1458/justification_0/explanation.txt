@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+Log.d(LOG_TAG, "onBind");
+WalkieService.java: Line 240

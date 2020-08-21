@@ -1,0 +1,4 @@
+ds-1146
+1)getRelativeTimeSpanString() is used to set a text on a TextView.
+2)This TextView is not used anywhere in the app except at this location.
+THus we mark it as FALSE POSITIVE.

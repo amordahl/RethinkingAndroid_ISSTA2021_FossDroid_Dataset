@@ -1,0 +1,5 @@
+ds-1145
+1)The SOURCE statement getData() returns a URI object.
+2)From this URI object, a string variable "number" is made, which is passed on to dialNumber()
+3)In the dial number method, the variable number is used in setText() of a view.
+4)The data doesnt flow into the SINK, thus we mark it as FALSE POSITIVE

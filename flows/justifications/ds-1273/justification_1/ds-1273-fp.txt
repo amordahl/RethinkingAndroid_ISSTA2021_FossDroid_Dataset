@@ -1,0 +1,3 @@
+ds-1273
+1)All the instances of setRequestedOrientation() take only 1 parameter each, which is a built in integer contant in the OS.
+2)Thus we mark the flow as FALSE POSITIVE.

@@ -1,0 +1,7 @@
+Since source is just formatting the phonenumber string
+It dies and this is false.
+
+Source:
+
+String formattedNumber = PhoneNumberUtils.formatNumber(number, Locale.getDefault().getCountry());
+ContactsEntryAdapter.java: Line 206

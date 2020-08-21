@@ -1,0 +1,21 @@
+All paramaters to all possible sinks are constant or graphed in ds-1117
+
+Sink 1:
+Object phoneService = getServiceMethod.invoke(null, "phone");
+DialerActivity.java: Line 772
+
+Constants 
+
+Sink 2:
+
+cancelMissedCallsNotificationMethod.invoke(iTelephony)
+DialerActivity.java: Line 789
+
+ITelephony is graphed in ds-1117
+
+Sink 3:
+
+ITelephony = asInterfaceMethod.invoke(null, phoneService);
+DialerActivity.java: Line 785
+
+Also graphed in ds-1117

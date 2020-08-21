@@ -1,0 +1,14 @@
+Lifecycle of serviceInfo is graphed in ds-1345
+
+Basically nsdServiceInfo created on Channel.java: Line 383 which is graphed in ds-1345
+
+Each of these services have a resolveListener assigned to them. 
+Once onServiceResolved is called the serviceInfo that was resolved is given to the sink.
+ All these are created in the same place
+
+m_name is just a constant
+
+Sink: 
+Log.i(LOG_TAG, m_name + ": onServiceResolved: " +nsdServiceInfo);
+Channel.java: Line 305
+

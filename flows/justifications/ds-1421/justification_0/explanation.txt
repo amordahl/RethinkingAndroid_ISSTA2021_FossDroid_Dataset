@@ -1,0 +1,5 @@
+All parameters to the are constant
+
+Sink:
+Log.d(LOG_TAG, "onCreate");
+WalkieService.java: Line 234

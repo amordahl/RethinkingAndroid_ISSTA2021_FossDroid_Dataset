@@ -1,0 +1,3 @@
+ds-1136
+1)The SOURCE statement, getRelativeTimeSpanString() is used in a setText() method of a view. 
+2)This view is no where used ahead to extract its string using getText(). Thus we can mark this flow as FALSE POSITIVE.

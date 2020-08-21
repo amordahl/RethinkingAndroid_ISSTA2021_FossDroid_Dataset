@@ -1,0 +1,6 @@
+ds-1229
+1)There are 4 instances of File.getAbsolutePath(), out of which, data from 2 of them is passed to execShell().
+2)The other 2 instances are used in objects v_deb.s, which as discussed in ds-1221. 
+3)In execShell(), the data from point (1) is received in the parameter args. 
+4)args is used to make another object cmd, and the SINK method start() is invoked on cmd.
+Thus, it is a TRUE POSITIVE.

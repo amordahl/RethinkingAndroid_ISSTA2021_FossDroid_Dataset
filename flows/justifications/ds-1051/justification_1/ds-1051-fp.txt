@@ -1,0 +1,3 @@
+ds-1051
+1)The SOURCE statement gets a string from values.xml file, but the string is used only in the Toast object.
+2)Thus we mark it as FALSE POSITIVE

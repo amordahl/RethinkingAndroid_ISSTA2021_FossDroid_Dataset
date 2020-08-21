@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink:
+registerReceiver(broadcastReceiver = new BroadcastReceiver() {..}, new IntentFilter(BROADCAST_ACTION_CLEAR_SUBSCRIPTIONS));
+TabsTrackerService.java: Line 209

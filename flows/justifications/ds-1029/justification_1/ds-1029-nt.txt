@@ -1,0 +1,5 @@
+ds-1029
+1)The SINK statement takes in a parameter "param_string" which is returned by getFBInfor(...). 
+2)The method getFBInfo(...) is maked as a native function signature.
+
+Thus we mark the flow as NATIVE

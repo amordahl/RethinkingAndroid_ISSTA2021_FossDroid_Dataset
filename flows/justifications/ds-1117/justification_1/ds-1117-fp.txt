@@ -1,0 +1,5 @@
+ds-1117
+1)getDeclaredClasses() returns a Class object.
+2)This is iterated in a loop and the result is set in ITelephonyStubClass
+3)This object is not passed to any other method, but is used to invoke a method for that class.
+Thus we mark is as FALSE POSITIVE.

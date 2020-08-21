@@ -1,0 +1,3 @@
+ds-1218
+1)The output from the SOURCE getDataDirectory() is appended to some text resource, and set to a text view.
+2)This textview is not used to retrieve the text back. Thus we mark it as FALSE POSITIVE.

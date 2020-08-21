@@ -1,0 +1,17 @@
+All possible sinks just print out an error
+
+Sink 1:
+Log.e(LOG_TAG,"Failed to clear missed calls notification due to ClassNotFoundException!", ex);
+DialerActivity.java: Line 799
+
+Sink 2: 
+Log.e(LOG_TAG,"Failed to clear missed calls notification due to InvocationTargetException!",ex);
+DialerActivity.java: Line 802
+
+Sink 3:
+Log.e(LOG_TAG,"Failed to clear missed calls notification due to NoSuchMethodException!", ex);
+DialerActivity.java: Line 806
+
+Sink 4:
+Log.e(LOG_TAG, "Failed to clear missed calls notification due to Throwable!", ex);
+DialerActivity.java: Line 809

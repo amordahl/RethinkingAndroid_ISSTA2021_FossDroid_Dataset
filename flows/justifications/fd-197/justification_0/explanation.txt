@@ -1,0 +1,5 @@
+All parameters to the sink are constant
+
+Sink: 
+i.setAction("com.notriddle.budget.LOCK");
+PinActivity.java: Line 170

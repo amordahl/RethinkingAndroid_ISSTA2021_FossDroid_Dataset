@@ -1,0 +1,4 @@
+ds-1167
+1)This SINK statement is startActivity() which takes in an intent object.
+2)This intent is declared within the method, and does not include any intent extras.
+Thus we mark the flow as FALSE POSITIVE.

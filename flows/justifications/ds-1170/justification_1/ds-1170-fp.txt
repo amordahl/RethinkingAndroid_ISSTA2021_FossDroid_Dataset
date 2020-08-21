@@ -1,0 +1,3 @@
+ds-1170
+1)The SOURCE statement getScheme() generates a String, which is used only in boolean operations within the method
+2)Thus we mark it as FALSE POSITIVE.

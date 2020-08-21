@@ -1,0 +1,4 @@
+ds-1126
+1)CV.putNull() is used in 3 locations within the SINK method. 
+2)In all the instances, a constant string is passed to the SINK statement. This constant string is defined in the android OS
+3)Thus we mark it as FALSE POSITIVE

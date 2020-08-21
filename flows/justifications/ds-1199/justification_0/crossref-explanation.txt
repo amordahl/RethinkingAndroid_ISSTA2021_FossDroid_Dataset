@@ -1,0 +1,8 @@
+All possible sinks are filled with constants
+
+Sink 1 to 3:
+cv.putNull(Calls.CACHED_NAME);
+cv.putNull(Calls.CACHED_NUMBER_TYPE);
+cv.putNull(Calls.CACHED_NUMBER_LABEL);
+
+DialerActivity.java: Line 754

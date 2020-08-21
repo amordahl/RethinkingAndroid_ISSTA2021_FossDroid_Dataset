@@ -1,0 +1,4 @@
+ds-1314
+1)Output from getId() is set in lastGamepadId.
+2)lastGamepadId is used only for a boolean operation in the function and not used anywhere else.
+Thus we mark it as FALSE POSITIVE

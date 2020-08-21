@@ -1,0 +1,13 @@
+All possible sinks are filled with constants.
+
+Sink 1:
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+FrozenBubble.java: Line 1159
+
+Sink 2: 
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
+FrozenBubble.java: Line 1162
+
+Sink 3:
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+FrozenBubble.java: Line 1169

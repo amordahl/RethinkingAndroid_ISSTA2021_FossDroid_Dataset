@@ -1,0 +1,4 @@
+ds-1224
+1)The SINK statement takes 1 parameter, which is an Intent object.
+2)This intent does not have any Intent Extras. Thus cant be tainted
+3)Thus we mark the flow as FALSE POSITIVE

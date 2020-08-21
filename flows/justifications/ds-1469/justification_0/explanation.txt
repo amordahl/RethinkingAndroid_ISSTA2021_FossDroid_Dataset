@@ -1,0 +1,9 @@
+All parameters to all possible sinks are constant
+
+Sink 1:
+Log.i(LOG_TAG, "Collider thread: start");
+WalkieService.java: Line 95
+
+Sink 2: 
+Log.i(LOG_TAG, "Collider thread: done");
+WalkieService.java: Line 97

@@ -1,0 +1,8 @@
+ds-1179
+1)The SOURCE statement generates an array mPhoneTypes, which is iterated over, and passed to the method addContactNumber()
+2)In this method, the element of mPhoneTypes, i.e. "type" is used only for boolean operations. 
+3)This array is also passed to DialerActivity as an Intent result. When the caller class gets back the result containing the array mPhoneTypes,
+the array is passed to selectSpeedDialNumber().
+4)In selectSpeedDialNumber(), the array is used as an Intent Extra and sent to SelectNumberDialog.java
+5)In this class, the elements of the array in questioned are used only for boolean operations. 
+6)There is no other place where the elements of this array are used, thus the flow can be marked as FALSE POSITIVE

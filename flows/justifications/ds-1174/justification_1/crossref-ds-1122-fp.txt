@@ -1,0 +1,4 @@
+ds-1122
+1)The SINK statement takes 3 params, out of which the last one is null
+2)The other 2 params are generated within the method, and contain only constants.
+Thus the flow is classified as FALSE POSITIVE

@@ -1,0 +1,8 @@
+sink is just printing an error
+
+Sink:
+Log.i(LOG_TAG, ex.toString());
+WalkieService.java: Line 205
+
+ex is from catch(final NumberFormatException ex)
+WalkieService.java: Line 202

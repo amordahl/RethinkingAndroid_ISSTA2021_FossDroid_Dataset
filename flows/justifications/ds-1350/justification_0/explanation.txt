@@ -1,0 +1,2 @@
+same sink as ds-1345
+getDeviceID is graphed in ds-1345

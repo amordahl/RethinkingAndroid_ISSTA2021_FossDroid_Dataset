@@ -1,0 +1,10 @@
+All parameters to the sink are constant.
+
+Sink:
+f.set(options, Boolean.FALSE);
+GameView.java: Line 864
+
+options is just the current BitMapFactory.Options()
+
+options = new BitmapFactory.Options();
+GameView.java: Line 857

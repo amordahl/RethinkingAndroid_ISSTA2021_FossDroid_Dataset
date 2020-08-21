@@ -1,0 +1,4 @@
+The source statement's variable gets killed instantly.
+(the setSelection method only wants how long it is)
+source: setSelection(time.getText().length());
+TimePicker.java: Line 315

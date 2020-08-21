@@ -1,0 +1,7 @@
+Sink is filled with a constant and an untaintable object.
+
+Sink: outState.writeToParcel(parcel, 0);
+FrozenBubble.java: Line 1056
+
+parcel is untaintable because it is set to Parcel.obtain() 
+(which just returns a Parcel object from a pool)

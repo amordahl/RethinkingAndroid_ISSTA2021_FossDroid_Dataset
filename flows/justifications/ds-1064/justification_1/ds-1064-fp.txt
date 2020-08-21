@@ -1,0 +1,3 @@
+ds-1064
+1)The SOURCE statement getRuntime().exec(), does not produce any output.
+Hence, it is a  FALSE POSITIVE

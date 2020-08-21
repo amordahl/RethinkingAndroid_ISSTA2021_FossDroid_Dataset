@@ -1,0 +1,8 @@
+Sink just prints out an error
+
+Sink:
+Log.w(LOG_TAG, ex.toString());
+WalkieService.java: Line 302
+
+ex is from catch(final IOException ex)
+WalkieService.java: line 300

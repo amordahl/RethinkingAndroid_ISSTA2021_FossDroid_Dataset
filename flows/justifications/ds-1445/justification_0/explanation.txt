@@ -1,0 +1,13 @@
+All sinks are either filled with constants or printing out errors
+
+Sink 1:
+Log.d(LOG_TAG, "onDestroy");
+WalkieService.java: Line 311
+
+Sink 2:
+Log.d(LOG_TAG, "ex.toString());
+WalkieService.java: Line 372
+
+Sink 3:
+Log.d(LOG_TAG, "onDestroy: done");
+WalkieService.java: Line 385

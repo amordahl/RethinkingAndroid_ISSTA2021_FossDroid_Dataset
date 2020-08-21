@@ -1,0 +1,10 @@
+All parameters to the sink are constant
+
+Sink 1:
+
+startActivity(intent);
+DialerActivity.java: Line 200
+
+intent = new Intent(getApplicationContext(), DialerPreferenceActivity.class);
+DialerActivity.java: Line 199
+

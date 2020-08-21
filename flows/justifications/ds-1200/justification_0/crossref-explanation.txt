@@ -1,0 +1,5 @@
+All parameters to the sink are constants. (just scroll up a bit)
+
+Sink: getContentResolver().update(Call.CONTENT_URI, cv, where.toString(), null);
+DialerActivity.java: Line 707
+

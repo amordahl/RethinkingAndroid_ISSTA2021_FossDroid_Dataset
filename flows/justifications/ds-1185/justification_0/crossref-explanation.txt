@@ -1,0 +1,9 @@
+All parameters to all possible sinks are constant
+
+Sink 1: 
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+DialerActivity.java: Line 410
+
+Sink 2: 
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+DialerActivity.java: Line 412

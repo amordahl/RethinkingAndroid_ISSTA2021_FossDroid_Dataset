@@ -1,0 +1,4 @@
+ds-1316
+1)options is an object of the builtin class BitmapFactory.Options and is formed within the class.
+2).set() takes 2 params, one of which is the "options" object, and the other is Boolean.FALSE. Both of them cant be tainted.
+Thus we mark it as FALSE POSITIVE
