@@ -1,0 +1,14 @@
+Flow justification FD-306
+
+flow Name	: fd-306	
+
+application name	 : nya.miku.wishmaster_54.apk       
+
+Result	: FALSE 
+
+Source class : nya.miku.wishmaster.ui.Database: java.util.List getHistory()
+
+Sink class :nya.miku.wishmaster.ui.settings.ApplicationSettings: void unlockChan(java.lang.String,boolean)
+
+Justification: All the data coming to Sink is coming from a constant values and no data is coming from Source getHistory.
+Two variables unlockChan and Value are passed in this function while Value is boolean True and False unlockchan is a constant getting passed from various functions. 

@@ -42662,4 +42662,568 @@
                 </app>
             </reference>
         </flow>
+        <flow generating_config="config_FlowDroid_2way_7.xml" id="fd-383">
+            <classification>FALSE</classification><reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int i(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r2)</statementfull>
+                    <statementgeneric>android.util.Log: int i(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"BudgetWatch"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.DatabaseCleanupTask: void correctTransactionsWithMissingReceipts(protect.budgetwatch.DBHelper)&gt;</method>
+                <classname>protect.budgetwatch.DatabaseCleanupTask</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.Transaction: protect.budgetwatch.Transaction toTransaction(android.database.Cursor)&gt;</method>
+                <classname>protect.budgetwatch.Transaction</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_2way_7.xml" id="fd-384">
+            <classification>FALSE</classification><reference type="to">
+                <statement>
+                    <statementfull>staticinvoke &lt;android.util.Log: int w(java.lang.String,java.lang.String)&gt;("BudgetWatch", $r3)</statementfull>
+                    <statementgeneric>android.util.Log: int w(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"BudgetWatch"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.DatabaseCleanupTask: void deleteOrphanedReceipts(protect.budgetwatch.DBHelper)&gt;</method>
+                <classname>protect.budgetwatch.DatabaseCleanupTask</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r6 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;protect.budgetwatch.Transaction: protect.budgetwatch.Transaction toTransaction(android.database.Cursor)&gt;</method>
+                <classname>protect.budgetwatch.Transaction</classname>
+                <app>
+                    <file>protect.budgetwatch_29.apk</file>
+                    <hashes>
+                        <hash type="MD5">10483789cab4534cc567558211d6be8e</hash>
+                        <hash type="SHA-1">c0113d86f591634f32db0b8ecd1b4cfa9090d267</hash>
+                        <hash type="SHA-256">978e0babed09f782273643ae39915a3951a6cbbd4ebd1cbf491588971cc6334e</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_maxcallbacks50.xml" id="fd-417">
+            <classification>MISMATCH</classification><reference type="to">
+                <statement>
+                    <statementfull>$r5 = interfaceinvoke $r5.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)&gt;($r3, $r0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void h(android.content.Context,int,java.lang.String)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r3 = interfaceinvoke $r9.&lt;android.database.Cursor: java.lang.String getString(int)&gt;(2)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>2</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b.a: uk.co.yahoo.p1rpp.calendartrigger.b.a$b a(android.content.Context,long,int)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b.a</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_taintwrapperdefaultfallback.xml" id="fd-421">
+            <classification>MISMATCH</classification><reference type="to">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r2.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)&gt;("lastAlarmTime", $l0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"lastAlarmTime"</value>
+                        </parameter>
+                        <parameter>
+                            <type>long</type>
+                            <value>$l0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void b(android.content.Context,long)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r9 = virtualinvoke $r4.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r7, $r8, $r3, $r6, "begin")</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r7</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r8</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"begin"</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b.a: uk.co.yahoo.p1rpp.calendartrigger.b.a$b a(android.content.Context,long,int)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b.a</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+    <flow generating_config="config_FlowDroid_implicitall.xml" id="fd-424">
+            <classification>MISMATCH</classification><reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r2, $z0)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r2</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>$z0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.b: void h(android.content.Context,int,boolean)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.b</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$d3 = virtualinvoke $r4.&lt;android.location.Location: double getLongitude()&gt;()</statementfull>
+                    <statementgeneric>android.location.Location: double getLongitude()</statementgeneric>
+                </statement>
+                <method>&lt;uk.co.yahoo.p1rpp.calendartrigger.service.MuteService: boolean a(int,double,android.content.Intent)&gt;</method>
+                <classname>uk.co.yahoo.p1rpp.calendartrigger.service.MuteService</classname>
+                <app>
+                    <file>uk.co.yahoo.p1rpp.calendartrigger_7.apk</file>
+                    <hashes>
+                        <hash type="MD5">bbec098be2af6de2c2466715a3887450</hash>
+                        <hash type="SHA-1">10fe0efe2ab2bfb449f414750466c2b1b8aee400</hash>
+                        <hash type="SHA-256">14c47715a1b0e4bd114404e5b33845ad7bad9c9ea5b4cdd51e9dfc8c94318b93</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-13">
+            <classification>FALSE</classification><reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void snoozeAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_Amandroid_kcontext0.xml" id="am-15">
+            <classification>FALSE</classification><reference type="from">
+                <statement>
+                    <statementfull>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementfull>
+                    <statementgeneric>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.content.Context</type>
+                            <value>android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,,</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void handleTriggerAlarm(android.content.Intent)&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="to">
+                <statement>
+                    <statementfull>android.util.Log: int e(java.lang.String,java.lang.String)</statementfull>
+                    <statementgeneric>android.util.Log: int e(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>android.util.Log: int e(java.lang.String,java.lang.String</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;com.angrydoughnuts.android.alarmclock.AlarmNotificationService: void dismissAll()&gt;</method>
+                <classname>com.angrydoughnuts.android.alarmclock.AlarmNotificationService</classname>
+                <app>
+                    <file>com.angrydoughnuts.android.alarmclock_15.apk</file>
+                    <hashes>
+                        <hash type="MD5">41a3ba6707763e7bf473ac7c4fc5d314</hash>
+                        <hash type="SHA-1">529661adf62eb3b9975d3f49fa5b8807b6446a59</hash>
+                        <hash type="SHA-256">545b577006bd9d93e6e272fa343f05334dcb0061888b8ed664676ea53e1e01c2</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_2way_89.xml" id="fd-204">
+            <classification>UNKNOWN</classification><reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r16.&lt;java.io.BufferedWriter: void write(java.lang.String)&gt;($r23)</statementfull>
+                    <statementgeneric>java.io.BufferedWriter: void write(java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r23</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;eu.kanade.tachiyomi.data.backup.BackupRestoreService: java.io.File writeErrorLog()&gt;</method>
+                <classname>eu.kanade.tachiyomi.data.backup.BackupRestoreService</classname>
+                <app>
+                    <file>eu.kanade.tachiyomi_41.apk</file>
+                    <hashes>
+                        <hash type="MD5">3e759edc807ff6385bf672abaacd8807</hash>
+                        <hash type="SHA-1">eb1f67ebba40367db6b11cd985967cb6d9fd44f4</hash>
+                        <hash type="SHA-256">6694d6a4852f165ed19b695f5d103a5a9b2b071e0332dc893462f773142b640c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r1.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;eu.kanade.tachiyomi.data.database.mappers.TrackGetResolver: eu.kanade.tachiyomi.data.database.models.Track mapFromCursor(android.database.Cursor)&gt;</method>
+                <classname>eu.kanade.tachiyomi.data.database.mappers.TrackGetResolver</classname>
+                <app>
+                    <file>eu.kanade.tachiyomi_41.apk</file>
+                    <hashes>
+                        <hash type="MD5">3e759edc807ff6385bf672abaacd8807</hash>
+                        <hash type="SHA-1">eb1f67ebba40367db6b11cd985967cb6d9fd44f4</hash>
+                        <hash type="SHA-256">6694d6a4852f165ed19b695f5d103a5a9b2b071e0332dc893462f773142b640c</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_2way_98.xml" id="fd-301">
+            <classification>UNKNOWN</classification><reference type="to">
+                <statement>
+                    <statementfull>$r4 = interfaceinvoke $r4.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)&gt;($r6, $r7)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r7</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.settings.ApplicationSettings: void setCustomTheme(java.lang.String)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.settings.ApplicationSettings</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r2 = interfaceinvoke $r7.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i0)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i0</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.lib.UriFileUtils: java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])&gt;</method>
+                <classname>nya.miku.wishmaster.lib.UriFileUtils</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_2way_82.xml" id="fd-306">
+            <classification>FALSE</classification><reference type="to">
+                <statement>
+                    <statementfull>$r3 = interfaceinvoke $r3.&lt;android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)&gt;($r1, 1)</statementfull>
+                    <statementgeneric>android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>$r1</value>
+                        </parameter>
+                        <parameter>
+                            <type>boolean</type>
+                            <value>1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.settings.ApplicationSettings: void unlockChan(java.lang.String,boolean)&gt;</method>
+                <classname>nya.miku.wishmaster.ui.settings.ApplicationSettings</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r7 = interfaceinvoke $r4.&lt;android.database.Cursor: java.lang.String getString(int)&gt;($i1)</statementfull>
+                    <statementgeneric>android.database.Cursor: java.lang.String getString(int)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>int</type>
+                            <value>$i1</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;nya.miku.wishmaster.ui.Database: java.util.List getHistory()&gt;</method>
+                <classname>nya.miku.wishmaster.ui.Database</classname>
+                <app>
+                    <file>nya.miku.wishmaster_54.apk</file>
+                    <hashes>
+                        <hash type="MD5">26539ed041ef0cf14738568d1c5e0071</hash>
+                        <hash type="SHA-1">74b0579c891c5ae38891d941b02b1c740f140c1f</hash>
+                        <hash type="SHA-256">8b16dbd2d4951bdab16f2aa9aabcbc8bee91264dab78f2bcafd3ee317b84e27c</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
+        <flow generating_config="config_FlowDroid_aliasalgolazy.xml" id="fd-332">
+            <classification>FALSE</classification><reference type="to">
+                <statement>
+                    <statementfull>virtualinvoke $r1.&lt;android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)&gt;("phoneNumbers", $r3)</statementfull>
+                    <statementgeneric>android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>"phoneNumbers"</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.util.ArrayList</type>
+                            <value>$r3</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.ContactViewDialog: void onSaveInstanceState(android.os.Bundle)&gt;</method>
+                <classname>org.dnaq.dialer2.ContactViewDialog</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+            <reference type="from">
+                <statement>
+                    <statementfull>$r12 = virtualinvoke $r5.&lt;android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)&gt;($r6, $r3, null, null, null)</statementfull>
+                    <statementgeneric>android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)</statementgeneric>
+                    <parameters>
+                        <parameter>
+                            <type>android.net.Uri</type>
+                            <value>$r6</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>$r3</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String[]</type>
+                            <value>null</value>
+                        </parameter>
+                        <parameter>
+                            <type>java.lang.String</type>
+                            <value>null</value>
+                        </parameter>
+                    </parameters>
+                </statement>
+                <method>&lt;org.dnaq.dialer2.DialerActivity: void updateMissedCalls()&gt;</method>
+                <classname>org.dnaq.dialer2.DialerActivity</classname>
+                <app>
+                    <file>org.dnaq.dialer2_17.apk</file>
+                    <hashes>
+                        <hash type="MD5">1174085e22f690e6a263428a44f0999c</hash>
+                        <hash type="SHA-1">5f6319ea6284bd159eaf075207a2d3002a27c688</hash>
+                        <hash type="SHA-256">4f6079121dfe2f2b61df488e7288a101782b7fc3e1b63c45ef245093eff76de3</hash>
+                    </hashes>
+                </app>
+            </reference>
+        </flow>
         </flows>
