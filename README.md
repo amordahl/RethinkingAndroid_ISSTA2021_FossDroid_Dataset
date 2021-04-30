@@ -10,14 +10,11 @@ The lists of flows are contained in files beginning with all_flows_. These flows
 
 Ground truths are included in a file called [groundtruths.xml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/groundtruths.xml). These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth. The ground truth can be one of the following:
 
-TRUE (n=63): a true positive
-FALSE (n=693): a false positive
-UNKNOWN (n=31): inconclusive because data flow was too complex.
-NATIVE (n=4): inconclusive because the flow went into native code.
-MISMATCH (n=48): inconclusive because the source and/or sink could not be found in the source code.
-
-
-
+- TRUE (n=63): a true positive
+- FALSE (n=693): a false positive
+- UNKNOWN (n=31): inconclusive because data flow was too complex.
+- NATIVE (n=4): inconclusive because the flow went into native code.
+- MISMATCH (n=48): inconclusive because the source and/or sink could not be found in the source code.
 
 ### Justifications
 
