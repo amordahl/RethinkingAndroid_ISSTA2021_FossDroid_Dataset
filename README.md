@@ -1,8 +1,6 @@
 # RethinkingAndroid_ISSTA2021_FossDroid_Dataset
 
-## Flows
-
-This folder contains the lists of flows detected, plus the ground truths.
+This repository contains the dataset of classified flows that we contributed in our ISSTA'2021 paper, "Rethinking Android Taint Analysis Evaluations: A Study on the Impact of Tool Configuration Spaces". The content of the dataset is contained in the folder [flows](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/tree/ISSTA2021/flows)
 
 ### Flow Lists
 
@@ -10,7 +8,7 @@ The lists of flows are contained in files beginning with all_flows_. These flows
 
 ### Ground Truths
 
-Ground truths are included in a file called [groundtruths.xml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/groundtruths.xml). These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth. The ground truth can be one of the following:
+Ground truths are included in a file called [groundtruths.xml](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/blob/ISSTA2021/flows/groundtruths.xml). These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth. The ground truth can be one of the following:
 
 - TRUE (n=63): a true positive
 - FALSE (n=693): a false positive
@@ -30,13 +28,13 @@ Finally, at conflict meetings, we did not require the student with the incorrect
 
 ### Example
 
-As described in our paper, each flow was classified by two students. Take, for example, flow [`ds-0`](https://github.com/amordahl/fdroid_package/tree/ISSTA2021/flows/justifications/ds-0). We have two justifications for this flow, each produced by a student independent of the other.
+As described in our paper, each flow was classified by two students. Take, for example, flow [`ds-0`](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/tree/ISSTA2021/flows/justifications/ds-0). We have two justifications for this flow, each produced by a student independent of the other.
 
-We consider [`justification_0`](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example.  This justification is in `.graphml` format, but many other formats were used by students (such as Draw.io and text files). Upon opening the graph in a graphml viewer (such as yEd), we see the following graph.
+We consider [`justification_0`](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example.  This justification is in `.graphml` format, but many other formats were used by students (such as Draw.io and text files). Upon opening the graph in a graphml viewer (such as yEd), we see the following graph.
 
 
 <img width="660" alt="Screen Shot 2021-04-29 at 10 03 31 PM" src="https://user-images.githubusercontent.com/9604243/116643465-bf6f4280-a936-11eb-9e67-7947b8224440.png">
 
 
 
-This student performed a backward investigation from the sink, `sendBroadcast(requestScan)` as seen in [flows/all_flows_droidsafe.xml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/all_flows_droidsafe.xml). They traced the origin of `requestScan` and found that it was defined on line 630, as a new Intent. The student searched for other useages of `requestScan`, and found that on line 632, data was added to `requestScan` through the `setData` method. The `file` parameter is a variable, and such, a possible source of taint. The student tracked the creation of the `file` variable and found it was created on line 596, from `path` -- again, the student tracked this variable to find that it was set as the device's screenshot folder on line 593. Since this is a constant, and does not contain data passed from a source, the student classified it as a false positive.
+This student performed a backward investigation from the sink, `sendBroadcast(requestScan)` as seen in [flows/all_flows_droidsafe.xml](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/blob/ISSTA2021/flows/all_flows_droidsafe.xml). They traced the origin of `requestScan` and found that it was defined on line 630, as a new Intent. The student searched for other useages of `requestScan`, and found that on line 632, data was added to `requestScan` through the `setData` method. The `file` parameter is a variable, and such, a possible source of taint. The student tracked the creation of the `file` variable and found it was created on line 596, from `path` -- again, the student tracked this variable to find that it was set as the device's screenshot folder on line 593. Since this is a constant, and does not contain data passed from a source, the student classified it as a false positive.
