@@ -29,5 +29,10 @@ Finally, at conflict meetings, we did not require the student with the incorrect
 
 ### Example
 
-We consider the file [flows/justifications/ds-0/justification_0/graph.graphml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example. Upon opening the graph in a graphml viewer (such as yEd), we see the following graph. <img width="643" alt="Screen Shot 2021-04-29 at 9 46 17 PM" src="https://user-images.githubusercontent.com/9604243/116642388-571f6180-a934-11eb-9d6f-fbbf5878dca2.png">
+We consider the file [flows/justifications/ds-0/justification_0/graph.graphml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example. Upon opening the graph in a graphml viewer (such as yEd), we see the following graph.
+
+<img width="643" alt="Screen Shot 2021-04-29 at 9 46 17 PM" src="https://user-images.githubusercontent.com/9604243/116642388-571f6180-a934-11eb-9d6f-fbbf5878dca2.png">
+
+
+
 This student performed a backward investigation from the sink, `sendBroadcast(requestScan)` as seen in [flows/all_flows_droidsafe.xml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/all_flows_droidsafe.xml). They traced the origin of `requestScan` and found that it was defined on line 630, as a new Intent. The student searched for other useages of `requestScan`, and found that on line 632, data was added to `requestScan` through the `setData`. The `file` parameter is a variable, and such, a possible source of taint. The student tracked the creation of the `file` variable and found it was created on line 596, from `path` -- again, the student tracked this variable to find that it was set as the device's screenshot folder on line 593. Since this is a constant, and does not contain data passed from a source, the student classified it as a false positive.
