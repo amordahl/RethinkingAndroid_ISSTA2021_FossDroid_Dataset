@@ -31,7 +31,8 @@ Finally, at conflict meetings, we did not require the student with the incorrect
 
 We consider the file [flows/justifications/ds-0/justification_0/graph.graphml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example. Upon opening the graph in a graphml viewer (such as yEd), we see the following graph.
 
-<img width="643" alt="Screen Shot 2021-04-29 at 9 46 17 PM" src="https://user-images.githubusercontent.com/9604243/116642388-571f6180-a934-11eb-9d6f-fbbf5878dca2.png">
+
+<img width="660" alt="Screen Shot 2021-04-29 at 10 03 31 PM" src="https://user-images.githubusercontent.com/9604243/116643465-bf6f4280-a936-11eb-9e67-7947b8224440.png">
 
 
 
