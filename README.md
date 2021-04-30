@@ -1,4 +1,4 @@
-# Structure
+# RethinkingAndroid_ISSTA2021_FossDroid_Dataset
 
 The package has two top-level folders.
 
