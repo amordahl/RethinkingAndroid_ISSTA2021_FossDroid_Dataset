@@ -8,13 +8,15 @@ The lists of flows are contained in files beginning with all_flows_. These flows
 
 ### Ground Truths
 
-Ground truths are included in a file called groundtruths.xml. These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth. The ground truth can be one of the following:
+Ground truths are included in a file called [groundtruths.xml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/groundtruths.xml). These files contain a subset of flows from the corresponding all_flows_*.xml file, but with an additional element, "classification", which encodes the ground truth. The ground truth can be one of the following:
 
-TRUE: a true positive
-FALSE: a false positive
-UNKNOWN: inconclusive because data flow was too complex.
-NATIVE: inconclusive because the flow went into native code.
-MISMATCH: inconclusive because the source and/or sink could not be found in the source code.
+TRUE (n=63): a true positive
+FALSE (n=693): a false positive
+UNKNOWN (n=31): inconclusive because data flow was too complex.
+NATIVE (n=4): inconclusive because the flow went into native code.
+MISMATCH (n=48): inconclusive because the source and/or sink could not be found in the source code.
+
+
 
 
 ### Justifications
@@ -29,7 +31,9 @@ Finally, at conflict meetings, we did not require the student with the incorrect
 
 ### Example
 
-We consider the file [flows/justifications/ds-0/justification_0/graph.graphml](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example. Upon opening the graph in a graphml viewer (such as yEd), we see the following graph.
+As described in our paper, each flow was classified by two students. Take, for example, flow [`ds-0`](https://github.com/amordahl/fdroid_package/tree/ISSTA2021/flows/justifications/ds-0). We have two justifications for this flow, each produced by a student independent of the other.
+
+We consider [`justification_0`](https://github.com/amordahl/fdroid_package/blob/ISSTA2021/flows/justifications/ds-0/justification_0/graph.graphml) as an example.  This justification is in `.graphml` format, but many other formats were used by students (such as Draw.io and text files). Upon opening the graph in a graphml viewer (such as yEd), we see the following graph.
 
 
 <img width="660" alt="Screen Shot 2021-04-29 at 10 03 31 PM" src="https://user-images.githubusercontent.com/9604243/116643465-bf6f4280-a936-11eb-9e67-7947b8224440.png">
