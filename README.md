@@ -1,11 +1,3 @@
-# Structure
-
-The package has two top-level folders.
-
-## Apps
-
-This folder contains the source code for all 30 APKs we selected from Fossdroid. Additionally, mappings.csv gives the mappings from the names presented in the paper to the source code names.
-
 ## Flows
 
 This folder contains the lists of flows detected, plus the ground truths.
