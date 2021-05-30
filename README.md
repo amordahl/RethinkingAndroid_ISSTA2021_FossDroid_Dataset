@@ -1,6 +1,7 @@
 # RethinkingAndroid_ISSTA2021_FossDroid_Dataset
 
-This repository contains the dataset of classified flows that we contributed in our ISSTA'2021 paper, "Rethinking Android Taint Analysis Evaluations: A Study on the Impact of Tool Configuration Spaces". The content of the dataset is contained in the folder [flows](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/tree/ISSTA2021/flows).
+This repository contains the dataset of classified flows that we contributed in 
+our ISSTA'2021 paper, "The Impact of Tool Configuration Spaces on the Evaluation of Configurable Taint Analysis for Android". The content of the dataset is contained in the folder [flows](https://github.com/amordahl/RethinkingAndroid_ISSTA2021_FossDroid_Dataset/tree/ISSTA2021/flows).
 
 ### Flow Lists
 
